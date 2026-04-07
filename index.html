@@ -4,128 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Крис и Виталя | Свадебное приглашение</title>
-    
     <!-- Подключение шрифта DotGothic16 -->
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Сброс стандартных отступов */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #000000;  /* Чёрные полосы по бокам */
-            font-family: 'DotGothic16', monospace; /* Шрифт для всего сайта */
-        }
-
-        /* Центрирующий контейнер — ширина строго как в макете */
-        .wedding_invitation {
-            width: 1920px;          /* Ширина десктоп-макета */
-            margin: 0 auto;         /* Центрирование по горизонтали */
-            background: #ffffff;    /* Цвет фона из макета */
-            position: relative;
-            min-height: 100vh;
-        }
-
-        /* Для мобильных устройств */
-        @media (max-width: 1920px) {
-            .wedding_invitation {
-                width: 100%;        /* Отсечение горизонтального скроллинга, если экран уже 1920px */
-                max-width: 1920px;
-            }
-        }
-
-        /* Мобильная версия — сужение контента до 360px */
-        @media (max-width: 720px) {
-            .wedding_invitation {
-                max-width: 360px;   /* Ширина мобильного макета */
-                width: 100%;
-            }
-        }
-
-        /* Пропорциональное сжатие картинок, отсечение растяжения */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* ===== Стили для первого блока (шапки) ===== */
-        .head_background {
-            /* Блок сделан контейнером для абсолютного позиционирования текста */
-            position: relative;
-            width: 100%;
-            /* Высота будет определяться картинкой, но задана на всякий случай */
-            line-height: 0;
-        }
-
-        /* Картинка на всю ширину блока */
-        .head_image {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Текст поверх картинки */
-        .head_text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #000000; /* Цвет текста */
-            width: 100%;
-        }
-
-        /* Стиль для крупной строки */
-        .head_title {
-            font-family: 'DotGothic16', monospace;
-            font-size: 72px;
-            font-weight: 400; /* Для этого шрифта жирность обычно 400 */
-            line-height: 1.2;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
-        /* Стиль для мелкой строки */
-        .head_subtitle {
-            font-family: 'DotGothic16', monospace;
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 1.2;
-        }
-
-        .heart_1 {
-            color: #CB402E; /* Цвет сердечка в тексте шапки */
-        }
-
-        /* Адаптив для мобильной версии (уменьшаем шрифты) */
-        @media (max-width: 720px) {
-            .head_title {
-                font-size: 36px;
-            }
-            .head_subtitle {
-                font-size: 18px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wedding_invitation">
-        <!-- ========== ПЕРВЫЙ БЛОК: ШАПКА С КАРТИНКОЙ И ТЕКСТОМ ========== -->
-        <div class="head_background">
-            <!-- ПУТЬ К PNG -->
+        <!-- Блок 1: Шапка (фон + текст) -->
+        <div class="head_block">
+            <!-- Фон шапки -->
             <img class="head_image" src="images/Web/Head_background_pixeled.png" alt="Приглашение">
+            <!-- Текст шапки -->
             <div class="head_text">
                 <div class="head_title">Крис <span class="heart_1">♥</span> Виталя</div>
                 <div class="head_subtitle">Суббота | 3 октября | 2026</div>
             </div>
         </div>
-        <!-- ========== КОНЕЦ ПЕРВОГО БЛОКА ========== -->
-
-        <!-- Здесь будут ваши следующие блоки -->
+        <!-- Блок 2: ЗАГС (текст + изображение) -->
+        <div class="CRO_block">
+            <div class="CRO_text">
+                <h2 class="CRO_title">Церемония</h2>
+                <p class="CRO_time">Время: 12:00</p>
+                <p class="CRO_place">Место: <a href="#" target="_blank" rel="noopener noreferrer">ЗАГС</a></p>
+                <p class="CRO_address">Адрес: Тихвинская ул., д. 11/16</p>
+            </div>
+            <div class="CRO_image">
+                <img src="images/Web/CRO_pixel.png" alt="Здание ЗАГСа">
+            </div>
+        </div>
+    </div>
+        <!-- Блок 3:  -->
+        
     </div>
 </body>
 </html>
