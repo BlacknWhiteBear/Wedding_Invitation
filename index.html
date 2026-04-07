@@ -27,6 +27,7 @@
             margin: 0 auto;         /* Центрирование по горизонтали */
             background: #ffffff;    /* Цвет фона из макета */
             position: relative;
+            min-height: 100vh;
         }
 
         /* Для мобильных устройств */
@@ -74,9 +75,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white; /* Цвет текста. Подберите под свой фон */
+            color: #000000; /* Цвет текста */
             width: 100%;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Лёгкая тень для читаемости */
         }
 
         /* Стиль для крупной строки */
@@ -97,6 +97,10 @@
             line-height: 1.2;
         }
 
+        .heart_1 {
+            color: #CB402E; /* Цвет сердечка в тексте шапки */
+        }
+
         /* Адаптив для мобильной версии (уменьшаем шрифты) */
         @media (max-width: 720px) {
             .head_title {
@@ -115,7 +119,7 @@
             <!-- ПУТЬ К PNG -->
             <img class="head_image" src="images/Web/Head_background.png" alt="Приглашение">
             <div class="head_text">
-                <div class="head_title">Крис ♥ Виталя</div>
+                <div class="head_title">Крис <span class="heart_1">♥</span> Виталя</div>
                 <div class="head_subtitle">Суббота | 3 октября | 2026</div>
             </div>
         </div>
