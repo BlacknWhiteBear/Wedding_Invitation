@@ -73,7 +73,7 @@ img {
 /* Стиль для крупной строки */
 .head_title {
     font-family: 'DotGothic16', monospace;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 400; /* Для этого шрифта жирность обычно 400 */
     line-height: 1.2;
     margin-bottom: 20px;
@@ -83,7 +83,7 @@ img {
 /* Стиль для мелкой строки */
 .head_subtitle {
     font-family: 'DotGothic16', monospace;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
 }
@@ -95,10 +95,10 @@ img {
 /* Адаптив для мобильной версии (уменьшаем шрифты) */
 @media (max-width: 720px) {
     .head_title {
-        font-size: 37px;
+        font-size: 28px;
     }
     .head_subtitle {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 /* ============================================ */
@@ -110,8 +110,8 @@ img {
     align-items: center;            /* выровнять по вертикали */
     gap: 15px;                      /* расстояние между текстом и картинкой */
     margin-top: 60px;               /* отступ от шапки (небольшой, но заметный) */
-    padding-left: 80px;             /* отступ текста от левого края */
-    padding-right: 80px;            /* отступ картинки от правого края */
+    padding-left: 90px;             /* отступ текста от левого края */
+    padding-right: 90px;            /* отступ картинки от правого края */
 }
 
 .CRO_text {
@@ -120,19 +120,19 @@ img {
 
 .CRO_title {
     color: #000000;
-    font-size: 40px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
 .CRO_time {
     color: #828282;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .CRO_place {
     color: #828282;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .CRO_place a {
@@ -147,7 +147,7 @@ img {
 
 .CRO_address {
     color: #828282;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .CRO_image {
@@ -155,7 +155,7 @@ img {
 }
 
 .CRO_image img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     display: block;
 }
