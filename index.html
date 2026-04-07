@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свадебное приглашение</title>
+    <title>Крис и Виталя | Свадебное приглашение</title>
+    
+    <!-- Подключение шрифта DotGothic16 -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    
     <style>
+        /* Сброс стандартных отступов */
         * {
             margin: 0;
             padding: 0;
@@ -12,59 +17,111 @@
         }
 
         body {
-            background: #000000;  /* чёрные полосы по бокам */
-            font-family: 'Arial', sans-serif; /* замените на ваш шрифт */
+            background: #000000;  /* Чёрные полосы по бокам */
+            font-family: 'DotGothic16', monospace; /* Шрифт для всего сайта */
         }
 
         /* Центрирующий контейнер — ширина строго как в макете */
-        .wedding-site {
-            width: 1920px;          /* точная ширина десктоп-макета */
-            margin: 0 auto;         /* центрирование по горизонтали */
-            background: #ffffff;    /* цвет фона из вашего макета */
+        .wedding_invitation {
+            width: 1920px;          /* Ширина десктоп-макета */
+            margin: 0 auto;         /* Центрирование по горизонтали */
+            background: #ffffff;    /* Цвет фона из макета */
             position: relative;
         }
 
         /* Для мобильных устройств */
         @media (max-width: 1920px) {
-            .wedding-site {
-                width: 100%;        /* чтобы не вылезать за экран, если он уже 1920px */
+            .wedding_invitation {
+                width: 100%;        /* Отсечение горизонтального скроллинга, если экран уже 1920px */
                 max-width: 1920px;
             }
         }
 
-        /* Мобильная версия — сужаем контент до 360px */
+        /* Мобильная версия — сужение контента до 360px */
         @media (max-width: 720px) {
-            .wedding-site {
-                max-width: 360px;   /* ширина мобильного макета */
+            .wedding_invitation {
+                max-width: 360px;   /* Ширина мобильного макета */
                 width: 100%;
             }
         }
 
-        /* Все картинки — пропорциональное сжатие, без растяжения */
+        /* Пропорциональное сжатие картинок, отсечение растяжения */
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
+        
+        /* ===== Стили для первого блока (шапки) ===== */
+        .head_background {
+            /* Блок сделан контейнером для абсолютного позиционирования текста */
+            position: relative;
+            width: 100%;
+            /* Высота будет определяться картинкой, но задана на всякий случай */
+            line-height: 0;
+        }
 
-        /* Базовые стили для блоков — вы замените своими */
-        section {
-            /* здесь будут ваши отступы и фоны */
+        /* Картинка на всю ширину блока */
+        .head_image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Текст поверх картинки */
+        .head_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white; /* Цвет текста. Подберите под свой фон */
+            width: 100%;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Лёгкая тень для читаемости */
+        }
+
+        /* Стиль для крупной строки */
+        .head_title {
+            font-family: 'DotGothic16', monospace;
+            font-size: 72px;
+            font-weight: 400; /* Для этого шрифта жирность обычно 400 */
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        /* Стиль для мелкой строки */
+        .head_subtitle {
+            font-family: 'DotGothic16', monospace;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        /* Адаптив для мобильной версии (уменьшаем шрифты) */
+        @media (max-width: 720px) {
+            .head_title {
+                font-size: 36px;
+            }
+            .head_subtitle {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="wedding-site">
-        <!-- ========== НАЧАЛО ВАШИХ БЛОКОВ ========== -->
-        
-        <!-- Пример блока. Удалите и вставьте свой первый блок из Figma -->
-        <section style="padding: 60px; text-align: center;">
-            <h1>Анна и Иван</h1>
-            <p>Приглашают вас на свадьбу</p>
-            <img src="ваше_фото.jpg" alt="фото пары" style="margin: 30px auto;">
-        </section>
+    <div class="wedding_invitation">
+        <!-- ========== ПЕРВЫЙ БЛОК: ШАПКА С КАРТИНКОЙ И ТЕКСТОМ ========== -->
+        <div class="head_background">
+            <!-- ПУТЬ К PNG -->
+            <img class="head_image" src="images/Web/Head_background.png" alt="Приглашение">
+            <div class="head_text">
+                <div class="head_title">Крис ♥ Виталя</div>
+                <div class="head_subtitle">Суббота | 3 октября | 2026</div>
+            </div>
+        </div>
+        <!-- ========== КОНЕЦ ПЕРВОГО БЛОКА ========== -->
 
-        <!-- ========== КОНЕЦ БЛОКОВ ========== -->
+        <!-- Здесь будут ваши следующие блоки -->
     </div>
 </body>
 </html>
