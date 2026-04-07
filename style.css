@@ -1,0 +1,114 @@
+/* Сброс стандартных отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;  /* Чёрные полосы по бокам */
+    font-family: 'DotGothic16', monospace; /* Шрифт для всего сайта */
+}
+
+/* Центрирующий контейнер — ширина строго как в макете */
+.wedding_invitation {
+    width: 1920px;          /* Ширина десктоп-макета */
+    margin: 0 auto;         /* Центрирование по горизонтали */
+    background: #ffffff;    /* Цвет фона из макета */
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 1920px) {
+    .wedding_invitation {
+        width: 100%;        /* Отсечение горизонтального скроллинга, если экран уже 1920px */
+        max-width: 1920px;
+    }
+}
+
+/* Мобильная версия — сужение контента до 360px */
+@media (max-width: 720px) {
+    .wedding_invitation {
+        max-width: 360px;   /* Ширина мобильного макета */
+        width: 100%;
+    }
+}
+
+/* Пропорциональное сжатие картинок, отсечение растяжения */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================ */
+/* Блок 1: Шапка (фон + текст)                  */
+/* ============================================ */
+.head_background {
+    /* Блок сделан контейнером для абсолютного позиционирования текста */
+    position: relative;
+    width: 100%;
+    /* Высота будет определяться картинкой, но задана на всякий случай */
+    line-height: 0;
+}
+
+/* Картинка на всю ширину блока */
+.head_image {
+    width: 100%;
+    height: auto;
+}
+
+/* Текст поверх картинки */
+.head_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000; /* Цвет текста */
+    width: 100%;
+}
+
+/* Стиль для крупной строки */
+.head_title {
+    font-family: 'DotGothic16', monospace;
+    font-size: 72px;
+    font-weight: 400; /* Для этого шрифта жирность обычно 400 */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Стиль для мелкой строки */
+.head_subtitle {
+    font-family: 'DotGothic16', monospace;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.heart_1 {
+    color: #CB402E; /* Цвет сердечка в тексте шапки */
+}
+
+/* Адаптив для мобильной версии (уменьшаем шрифты) */
+@media (max-width: 720px) {
+    .head_title {
+        font-size: 36px;
+    }
+    .head_subtitle {
+        font-size: 18px;
+    }
+}
+
+/* ============================================ */
+/* Блок 2: ЗАГС (текст)                         */
+/* ============================================ */
+
+
+/* ============================================ */
+/* Блок 3: ЗАГС (картинка                       */
+/* ============================================ */
+
+
