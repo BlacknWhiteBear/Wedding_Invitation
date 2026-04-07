@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебное приглашение</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000;  /* чёрные полосы по бокам */
+            font-family: 'Arial', sans-serif; /* замените на ваш шрифт */
+        }
+
+        /* Центрирующий контейнер — ширина строго как в макете */
+        .wedding-site {
+            width: 1920px;          /* точная ширина десктоп-макета */
+            margin: 0 auto;         /* центрирование по горизонтали */
+            background: #ffffff;    /* цвет фона из вашего макета */
+            position: relative;
+        }
+
+        /* Для мобильных устройств */
+        @media (max-width: 1920px) {
+            .wedding-site {
+                width: 100%;        /* чтобы не вылезать за экран, если он уже 1920px */
+                max-width: 1920px;
+            }
+        }
+
+        /* Мобильная версия — сужаем контент до 360px */
+        @media (max-width: 720px) {
+            .wedding-site {
+                max-width: 360px;   /* ширина мобильного макета */
+                width: 100%;
+            }
+        }
+
+        /* Все картинки — пропорциональное сжатие, без растяжения */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Базовые стили для блоков — вы замените своими */
+        section {
+            /* здесь будут ваши отступы и фоны */
+        }
+    </style>
+</head>
+<body>
+    <div class="wedding-site">
+        <!-- ========== НАЧАЛО ВАШИХ БЛОКОВ ========== -->
+        
+        <!-- Пример блока. Удалите и вставьте свой первый блок из Figma -->
+        <section style="padding: 60px; text-align: center;">
+            <h1>Анна и Иван</h1>
+            <p>Приглашают вас на свадьбу</p>
+            <img src="ваше_фото.jpg" alt="фото пары" style="margin: 30px auto;">
+        </section>
+
+        <!-- ========== КОНЕЦ БЛОКОВ ========== -->
+    </div>
+</body>
+</html>
