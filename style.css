@@ -115,10 +115,10 @@ img {
 .CRO_block {
     display: flex;
     align-items: center;            /* выровнять по вертикали */
-    gap: 15px;                      /* расстояние между текстом и картинкой */
-    margin-top: 60px;               /* отступ от шапки (небольшой, но заметный) */
-    padding-left: 90px;             /* отступ текста от левого края */
-    padding-right: 90px;            /* отступ картинки от правого края */
+    justify-content: space-between; /* расталкивание текста и картинки по краям*/
+    margin-top: 45px;               /* отступ от шапки (небольшой, но заметный) */
+    padding-left: 75px;             /* отступ текста от левого края */
+    padding-right: 75px;            /* отступ картинки от правого края */
 }
 
 .CRO_text {
@@ -157,11 +157,11 @@ img {
 }
 
 .CRO_image {
-    margin-left: auto;
+    max-width: 585px;
 }
 
 .CRO_image img {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
