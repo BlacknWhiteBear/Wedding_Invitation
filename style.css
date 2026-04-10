@@ -93,7 +93,7 @@ img {
 }
 
 .year_2026 {
-    letter-spacing: 2px;  /* нужное вам значение */
+    letter-spacing: 4px;
 }
 
 .heart_1 {
@@ -137,6 +137,10 @@ img {
     margin-bottom: 20px;
 }
 
+.CRO_hour {
+    letter-spacing: 4px;
+}
+
 .CRO_place {
     color: #828282;
     font-size: 18px;
@@ -154,6 +158,10 @@ img {
 .CRO_address {
     color: #828282;
     font-size: 18px;
+}
+
+.CRO_building {
+    letter-spacing: 4px;
 }
 
 .CRO_image {
@@ -180,7 +188,83 @@ img {
     }
 }
 /* ============================================ */
-/* Блок 3:                                      */
+/* Блок 3: Ресторан (текст + изображение)       */
+/* ============================================ */
+.banquet_block {
+    display: flex;
+    align-items: center;            /* выровнять по вертикали */
+    justify-content: space-between; /* расталкивание текста и картинки по краям*/
+    margin-top: 45px;               /* отступ от шапки (небольшой, но заметный) */
+    padding-left: 75px;             /* отступ текста от левого края */
+    padding-right: 75px;            /* отступ картинки от правого края */
+}
+
+.banquet_image {
+    max-width: 585px;
+}
+
+.banquet_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banquet_text {
+/* пока пусто */
+}
+
+.banquet_title {
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.banquet_time {
+    color: #828282;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banquet_hour {
+    letter-spacing: 4px;
+}
+
+.banquet_place {
+    color: #828282;
+    font-size: 18px;
+}
+
+.banquet_place a {
+    color: inherit;          /* чтобы ссылка не выделялась цветом, наследует цвет CRO_place */
+}
+
+.banquet_place a:hover {
+    text-decoration: underline;
+    color: #666666;             /* небольшое затемнение при наведении (опционально) */
+}
+
+.banquet_address {
+    color: #828282;
+    font-size: 18px;
+}
+
+.banquet_building {
+    letter-spacing: 4px;
+}
+
+
+/* Мобильная версия */
+@media (max-width: 720px) {
+    .banquet_block {
+        flex-direction: column-reverse; /* главное изменение */
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+        margin-top: 30px;
+    }
+}
+/* ============================================ */
+/* Блок 4:                                      */
 /* ============================================ */
 
 
