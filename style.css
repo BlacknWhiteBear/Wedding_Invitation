@@ -403,22 +403,28 @@ img {
     .flowers_block {
         /* пока пусто */
     }
+
     .flower_QR_image {
         margin-bottom: 30px;
+        max-width: 428px;
     }
+
     .flower_QR_image img {
         max-width: 100%;
         height: auto;
         display: block;
     }
+
     .flowers_text {
         /* пока пусто */
     }
+
     .flowers_title {
         font-size: 25px;
         color: #000000;
         margin-bottom: 20px;
     }
+
     .flowers_question,
     .flowers_then,
     .flowers_QR-code,
@@ -427,16 +433,19 @@ img {
         color: #828282;
         margin-bottom: 5px;
     }
+
     .flowers_then a,
     .flowers_QR-code a {
         color: #828282;
         text-decoration: none;
     }
+
     .flowers_then a:hover,
     .flowers_QR-code a:hover {
         text-decoration: underline;
         color: #666666;
     }
+
     .heart_2 {
         color: #C0C293;  /* второе сердечко светло-зелёное */
     }
@@ -462,17 +471,20 @@ img {
     .details_title {
         font-size: 28px;
     }
+    
     .details-wrapper {
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
         gap: 40px;
     }
+    
     .dress-code_title,
     .gifts_title,
     .flowers_title {
         font-size: 22px;
     }
+    
     .dress-code_suggestion-first-line,
     .dress-code_suggestion-second-line,
     .dress-code_note,
@@ -488,13 +500,15 @@ img {
     .dress-code_note-ref {
         font-size: 12px;
     }
+    
     .arrow_to-right,
     .arrow_to-left {
         font-size: 12px;
     }
+    
 }
 
 
 /* ============================================ */
-/* Блок 4: Детали                               */
+/* Блок 5:                                      */
 /* ============================================ */
