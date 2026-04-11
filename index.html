@@ -94,6 +94,59 @@
                 </div>
             </div>
         </div>
+        <!-- Блок 5: Опросник (RSVP) -->
+        <div class="rsvp_block">
+            <h2 class="rsvp_title">Опрос</h2>
+            <div class="rsvp_form">
+            <!-- Поле "Ваше имя" -->
+            <div class="field_group">
+                <label class="field_label" for="guest_name">Ваше имя (имена)</label>
+                <input type="text" id="guest_name" class="text_input" placeholder="Введите ваше имя" value="">
+            </div>
+            <!-- Два блока: Церемония и Ресторан -->
+            <div class="questions_row">
+                <!-- Церемония -->
+                <div class="question_card">
+                    <span class="question_label">Вы будете на церемонии?</span>
+                    <div class="checkbox_group">
+                        <label class="checkbox_option">
+                            <input type="checkbox" name="ceremony" value="yes" class="styled_checkbox">
+                            <span class="checkbox_custom"></span>
+                            <span class="checkbox_text">Да</span>
+                        </label>
+                        <label class="checkbox_option">
+                            <input type="checkbox" name="ceremony" value="no" class="styled_checkbox">
+                            <span class="checkbox_custom"></span>
+                            <span class="checkbox_text">Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Ресторан -->
+                <div class="question_card">
+                    <span class="question_label">Вы будете в ресторане?</span>
+                    <div class="checkbox_group">
+                        <label class="checkbox_option">
+                            <input type="checkbox" name="restaurant" value="yes" class="styled_checkbox">
+                            <span class="checkbox_custom"></span>
+                            <span class="checkbox_text">Да</span>
+                        </label>
+                        <label class="checkbox_option">
+                            <input type="checkbox" name="restaurant" value="no" class="styled_checkbox">
+                            <span class="checkbox_custom"></span>
+                            <span class="checkbox_text">Нет</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- Поле "Предпочтения по меню" -->
+            <div class="field_group">
+                <label class="field_label" for="diet">Предпочтения по меню / Аллергии</label>
+                <textarea id="diet" class="textarea-input" placeholder="Сообщите нам о ваших предпочтениях или аллергиях, чтобы мы подобрали идеальные блюда для вас ♥"></textarea>
+            </div>
+            <!-- Кнопка отправки -->
+            <button class="submit-btn">Отправить</button>
+            </div>
+        </div>
         <!-- Блок ?: -->
     </div>
 </body>
