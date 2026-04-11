@@ -511,13 +511,14 @@ img {
 /* Блок 5: Опросник                             */
 /* ============================================ */
 .rsvp-block {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    padding: 40px 90px;
-    background-image: url('images/Web/Survey_background.png'); /* путь к вашей картинке-подложке */
-    background-size: cover;
+    max-width: 1655px;          /* ширина по макету */
+    margin: 80px auto 0 auto;   /* центрирование по горизонтали, отступ сверху 80px */
+    background-image: url('images/Web/Survey_background.png');
+    background-size: cover;     /* картинка покрывает весь блок */
     background-position: center;
-    border-radius: 20px;
+    border: 2px solid #000000;  /* чёрная обводка */
+    border-radius: 16px;        /* скругление углов (незначительное, можете уменьшить до 8px) */
+    padding: 40px 60px;         /* внутренние отступы: сверху/снизу 40px, слева/справа 60px */
 }
 
 .rsvp-title {
