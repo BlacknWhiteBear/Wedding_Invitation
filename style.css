@@ -510,7 +510,7 @@ img {
 /* ============================================ */
 /* Блок 5: Опросник                             */
 /* ============================================ */
-.rsvp-block {
+.rsvp_block {
     max-width: 1655px;          /* ширина по макету */
     margin: 80px auto 0 auto;   /* центрирование по горизонтали, отступ сверху 80px */
     background-image: url('images/Web/Survey_background.png');
@@ -521,31 +521,31 @@ img {
     padding: 40px 60px;         /* внутренние отступы: сверху/снизу 40px, слева/справа 60px */
 }
 
-.rsvp-title {
+.rsvp_title {
     text-align: center;
     font-size: 32px;
     color: #000000;
     margin-bottom: 40px;
 }
 
-.rsvp-form {
+.rsvp_form {
     max-width: 800px;
     margin: 0 auto;
 }
 
 /* Общие стили для полей */
-.field-group {
+.field_group {
     margin-bottom: 30px;
 }
 
-.field-label {
+.field_label {
     display: block;
     font-size: 18px;
     color: #000000;
     margin-bottom: 8px;
 }
 
-.text-input,
+.text_input,
 .textarea-input {
     width: 100%;
     padding: 12px 16px;
@@ -560,26 +560,26 @@ img {
     box-sizing: border-box;
 }
 
-.text-input::placeholder,
-.textarea-input::placeholder {
+.text_input::placeholder,
+.textarea_input::placeholder {
     color: #828282;
     font-family: 'DotGothic16', monospace;
 }
 
-.textarea-input {
+.textarea_input {
     resize: vertical;
     min-height: 100px;
 }
 
 /* Ряд с двумя блоками вопросов */
-.questions-row {
+.questions_row {
     display: flex;
     gap: 40px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
-.question-card {
+.question_card {
     flex: 1;
     background: rgba(255,255,255,0.8);
     padding: 20px;
@@ -587,20 +587,20 @@ img {
     border: 2px solid #000000;
 }
 
-.question-label {
+.question_label {
     display: block;
     font-size: 18px;
     color: #000000;
     margin-bottom: 16px;
 }
 
-.checkbox-group {
+.checkbox_group {
     display: flex;
     gap: 24px;
     align-items: center;
 }
 
-.checkbox-option {
+.checkbox_option {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -610,7 +610,7 @@ img {
 }
 
 /* Скрываем родной чекбокс */
-.styled-checkbox {
+.styled_checkbox {
     position: absolute;
     opacity: 0;
     width: 0;
@@ -618,7 +618,7 @@ img {
 }
 
 /* Кастомный чекбокс */
-.checkbox-custom {
+.checkbox_custom {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -630,7 +630,7 @@ img {
 }
 
 /* Сердечко вместо галочки */
-.styled-checkbox:checked + .checkbox-custom::after {
+.styled_checkbox:checked + .checkbox_custom::after {
     content: "♥";
     position: absolute;
     top: 50%;
@@ -642,17 +642,17 @@ img {
 
 /* Цвет сердечка для "Да" (красный) и "Нет" (серый) будет задан через JS, но базово */
 /* Пока просто сделаем красным, а JS потом добавим логику переключения цвета */
-.styled-checkbox:checked + .checkbox-custom::after {
+.styled_checkbox:checked + .checkbox_custom::after {
     color: #CB402E;  /* по умолчанию красный, для "Нет" будем менять через класс */
 }
 
 /* Для чекбокса "Нет" добавим отдельный класс при checked */
-.checkbox-option.no-checked .checkbox-custom::after {
+.checkbox_option.no_checked .checkbox_custom::after {
     color: #828282;
 }
 
 /* Кнопка отправки */
-.submit-btn {
+.submit_btn {
     display: block;
     width: 100%;
     padding: 14px;
@@ -667,37 +667,37 @@ img {
     text-align: center;
 }
 
-.submit-btn:active {
+.submit_btn:active {
     transform: scale(0.97);
     background: #a83222;
 }
 
 /* Адаптив для мобилок */
 @media (max-width: 720px) {
-    .rsvp-block {
+    .rsvp_block {
         padding: 30px 20px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    .rsvp-title {
+    .rsvp_title {
         font-size: 24px;
     }
-    .questions-row {
+    .questions_row {
         flex-direction: column;
         gap: 20px;
     }
-    .field-label,
-    .question-label {
+    .field_label,
+    .question_label {
         font-size: 16px;
     }
-    .text-input,
-    .textarea-input {
+    .text_input,
+    .textarea_input {
         font-size: 14px;
     }
-    .submit-btn {
+    .submit_btn {
         font-size: 18px;
     }
 }
 /* ============================================ */
-/* Блок 5: Опросник                             */
+/* Блок 6:                                      */
 /* ============================================ */
