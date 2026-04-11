@@ -264,7 +264,223 @@ img {
     }
 }
 /* ============================================ */
-/* Блок 4:                                      */
+/* Блок 4: Детали                               */
 /* ============================================ */
 
+/* Заголовок "Детали" */
+.details_text {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.details_title {
+    font-size: 32px;
+    color: #000000;
+}
 
+/* Обёртка для двух колонок */
+.details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 90px;
+    padding-right: 90px;
+    gap: 40px;
+}
+
+/* Левая колонка */
+.details-left {
+    flex-shrink: 0;
+}
+
+/* Правая колонка */
+.details-right {
+    flex-shrink: 0;
+}
+
+    /* ===== Блок 4.1: Дресс-код ===== */
+    .dress-code_block {
+        /* пока пусто */
+    }
+    .dress-code_image {
+        /* пока пусто */
+    }
+    .dress-code_image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .dress-code_text {
+        margin-top: 20px;
+    }
+    .dress-code_title {
+        font-size: 25px;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+    .dress-code_suggestion-first-line,
+    .dress-code_suggestion-second-line {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 5px;
+    }
+    .dress-code_note-ref {
+        font-size: 18px;
+        color: #CB402E;  /* звёздочка красная */
+    }
+    .dress-code_note {
+        font-size: 18px;
+        color: #828282;
+        margin-top: 10px;
+    }
+
+    /* ===== Блок 4.2: Подарки ===== */
+    .gifts_block {
+        margin-bottom: 40px;
+    }
+    .gifts_text {
+        /* пока пусто */
+    }
+    .gifts_title {
+        font-size: 25px;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+    .gifts_best-gift-first-line,
+    .gifts_best-gift-second-line,
+    .gifts_however-first-line {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 5px;
+    }
+    .heart_1 {
+        color: #CB402E;  /* первое сердечко красное */
+    }
+    .rouble {
+        color: #C0C293;  /* знак рубля светло-зелёный */
+    }
+    .gifts_wishlist {
+        font-size: 18px;
+        color: #828282;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .arrow_to-right,
+    .arrow_to-left {
+        font-size: 18px;
+        color: #CB402E;  /* стрелочки красные */
+        margin: 0 5px;
+    }
+    .gifts_wishlist a {
+        color: #828282;
+        text-decoration: none;
+    }
+    .gifts_wishlist a:hover {
+        text-decoration: underline;
+        color: #666666;
+    }
+    .gifts_ending {
+        font-size: 18px;
+        color: #828282;
+    }
+    
+    /* ===== Блок 4.3: Цветы ===== */
+    .flowers_block {
+        /* пока пусто */
+    }
+    .flower_QR_image {
+        margin-bottom: 20px;
+    }
+    .flower_QR_image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .flowers_text {
+        /* пока пусто */
+    }
+    .flowers_title {
+        font-size: 25px;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+    .flowers_question,
+    .flowers_then,
+    .flowers_QR-code,
+    .flowers_subscription {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 5px;
+    }
+    .flowers_then a,
+    .flowers_QR-code a {
+        color: #828282;
+        text-decoration: none;
+    }
+    .flowers_then a:hover,
+    .flowers_QR-code a:hover {
+        text-decoration: underline;
+        color: #666666;
+    }
+    .heart_2 {
+        color: #C0C293;  /* второе сердечко светло-зелёное */
+    }
+    
+    /* Плавная прокрутка и выделение QR-кода */
+    html {
+        scroll-behavior: smooth;
+    }
+    #qr-image_container:target {
+        outline: 4px solid #CB402E;
+        outline-offset: 8px;
+        transition: outline 0.2s ease;
+    }
+
+/* ===== Мобильная версия ===== */
+@media (max-width: 720px) {
+    .details_text {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .details_title {
+        font-size: 28px;
+    }
+    .details-wrapper {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 40px;
+    }
+    .dress-code_title,
+    .gifts_title,
+    .flowers_title {
+        font-size: 22px;
+    }
+    .dress-code_suggestion-first-line,
+    .dress-code_suggestion-second-line,
+    .dress-code_note,
+    .gifts_best-gift-first-line,
+    .gifts_best-gift-second-line,
+    .gifts_however-first-line,
+    .gifts_wishlist,
+    .gifts_ending,
+    .flowers_question,
+    .flowers_then,
+    .flowers_QR-code,
+    .flowers_subscription,
+    .dress-code_note-ref {
+        font-size: 16px;
+    }
+    .arrow_to-right,
+    .arrow_to-left {
+        font-size: 16px;
+    }
+}
+
+
+/* ============================================ */
+/* Блок 4: Детали                               */
+/* ============================================ */
