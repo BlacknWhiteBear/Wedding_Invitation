@@ -607,7 +607,7 @@ img {
     color: #000000;
 }
 
-/* Скрываем родной чекбокс */
+/* Скрытие родного чекбокса */
 .styled_checkbox {
     position: absolute;
     opacity: 0;
@@ -639,12 +639,12 @@ img {
 }
 
 /* Цвет сердечка для "Да" (красный) и "Нет" (серый) будет задан через JS, но базово */
-/* Пока просто сделаем красным, а JS потом добавим логику переключения цвета */
+/* Логика для JS будет добавлена позже */
 .styled_checkbox:checked + .checkbox_custom::after {
-    color: #CB402E;  /* по умолчанию красный, для "Нет" будем менять через класс */
+    color: #CB402E;  /* по умолчанию цвет красный, для "Нет" будет изменяться через класс */
 }
 
-/* Для чекбокса "Нет" добавим отдельный класс при checked */
+/* Отдельный класс для чекбокса "Нет" при checked */
 .checkbox_option.no_checked .checkbox_custom::after {
     color: #828282;
 }
@@ -697,5 +697,92 @@ img {
     }
 }
 /* ============================================ */
-/* Блок 6:                                      */
+/* Блок 6: Доня                                 */
 /* ============================================ */
+.donya_block {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 90px;
+    padding-right: 90px;
+    gap: 0; /* без отступов между колонками */
+}
+
+/* Левая колонка (4/5) */
+.donya_left {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* вертикальное центрирование содержимого */
+}
+
+/* Контейнер для текста (верхняя часть ~1/3) */
+.donya_text_wrapper {
+    display: flex;
+    justify-content: flex-end; /* прижимаем текст к правому краю левой колонки */
+    align-items: center;
+    /* Высота определится содержимым, но можно задать min-height: 33% если нужно строго */
+    padding: 20px 0;
+}
+
+.donya_text {
+    text-align: right;
+    max-width: 80%; /* чтобы текст не упирался в край */
+}
+
+/* Картинка Слони (нижняя часть ~2/3) */
+.donya_left .slonya_image {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Правая колонка (1/5) */
+.donya_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dodya_image {
+    max-width: 100%;
+}
+
+/* Общие стили для картинок */
+.slonya_image img,
+.dodya_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Адаптив для мобильной версии */
+@media (max-width: 720px) {
+    .donya_block {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .donya_left {
+        flex: auto;
+    }
+    .donya_text_wrapper {
+        justify-content: center;
+    }
+    .donya_text {
+        text-align: center;
+        max-width: 100%;
+    }
+    .donya_right {
+        flex: auto;
+        justify-content: center;
+    }
+    .slonya_image, .dodya_image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
