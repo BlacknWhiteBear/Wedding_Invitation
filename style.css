@@ -337,7 +337,7 @@ img {
     .dress-code_note {
         font-size: 14px;
         color: #828282;
-        margin-top: 20px;
+        margin-top: 35px;
     }
 
     /* ===== Блок 4.2: Подарки ===== */
@@ -423,6 +423,7 @@ img {
     .flower_QR_image {
         margin-bottom: 30px;
         max-width: 100%;
+        margin-top: 70px;
     }
 
     .flower_QR_image img {
@@ -451,7 +452,7 @@ img {
     }
 
     .QR_letters {
-        letter-spacing: 4px;
+        letter-spacing: 5px;
     }
 
     .flowers_then a,
@@ -531,31 +532,29 @@ img {
 /* Блок 5: Опросник                             */
 /* ============================================ */
 .rsvp_block {
-    max-width: 1200px;          /* ширина по макету */
-    margin: 80px auto 0 auto;   /* центрирование по горизонтали, отступ сверху 80px */
+    margin: 80px 120px 120px;   /* центрирование по горизонтали, отступ сверху 80px, слева и справа по 120 */
     background-image: url('images/Web/Survey_background.png');
     background-size: cover;     /* картинка покрывает весь блок */
     background-position: center;
-    border: 2px solid #000000;  /* чёрная обводка */
+    border: 4px solid #000000;  /* чёрная обводка */
     border-radius: 8px;        /* скругление углов (незначительное, можете уменьшить до 8px) */
-    padding: 40px 60px;         /* внутренние отступы: сверху/снизу 40px, слева/справа 60px */
+    padding: 40px 90px;         /* внутренние отступы: сверху/снизу 40px, слева/справа 60px */
 }
 
 .rsvp_title {
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     color: #000000;
     margin-bottom: 40px;
 }
 
 .rsvp_form {
-    max-width: 800px;
-    margin: 0 auto;
+    /* пока пусто */
 }
 
 /* Общие стили для полей */
 .field_group {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .field_label {
@@ -573,7 +572,7 @@ img {
     font-size: 16px;
     color: #000000;
     background: #ffffff;
-    border: 2px solid #000000;
+    border: 4px solid #000000;
     border-radius: 8px;
     outline: none;
     transition: all 0.2s ease;
@@ -588,7 +587,7 @@ img {
 
 .textarea_input {
     resize: vertical;
-    min-height: 100px;
+    min-height: 200px;
 }
 
 /* Ряд с двумя блоками вопросов */
@@ -641,7 +640,7 @@ img {
     width: 40px;
     height: 40px;
     background: #ffffff;
-    border: 2px solid #000000;
+    border: 4px solid #000000;
     border-radius: 8px;
     position: relative;
     transition: background 0.1s ease;
@@ -678,7 +677,7 @@ img {
     color: #ffffff;
     font-family: 'DotGothic16', monospace;
     font-size: 20px;
-    border: 2px solid #000000;
+    border: 4px solid #000000;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.1s ease, background 0.2s ease;
