@@ -81,7 +81,7 @@ img {
 /* Стиль для крупной строки */
 .head_title {
     font-family: 'DotGothic16', monospace;
-    font-size: 48px;
+    font-size: 64px;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
@@ -89,7 +89,7 @@ img {
 /* Стиль для мелкой строки */
 .head_subtitle {
     font-family: 'DotGothic16', monospace;
-    font-size: 19px;
+    font-size: 25px;
 }
 
 .year_2026 {
@@ -117,8 +117,8 @@ img {
     align-items: center;            /* выровнять по вертикали */
     justify-content: space-between; /* расталкивание текста и картинки по краям*/
     margin-top: 45px;               /* отступ от шапки (небольшой, но заметный) */
-    padding-left: 75px;             /* отступ текста от левого края */
-    padding-right: 75px;            /* отступ картинки от правого края */
+    padding-left: 120px;             /* отступ текста от левого края */
+    padding-right: 120px;            /* отступ картинки от правого края */
 }
 
 .CRO_text {
@@ -127,14 +127,14 @@ img {
 
 .CRO_title {
     color: #000000;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 30px;
 }
 
 .CRO_time {
     color: #828282;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom: 40px;
 }
 
 .CRO_hour {
@@ -143,7 +143,7 @@ img {
 
 .CRO_place {
     color: #828282;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .CRO_place a {
@@ -157,7 +157,7 @@ img {
 
 .CRO_address {
     color: #828282;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .CRO_building {
@@ -165,7 +165,7 @@ img {
 }
 
 .CRO_image {
-    max-width: 585px;
+    max-width: 100%;
 }
 
 .CRO_image img {
@@ -195,12 +195,12 @@ img {
     align-items: center;            /* выровнять по вертикали */
     justify-content: space-between; /* расталкивание текста и картинки по краям*/
     margin-top: 45px;               /* отступ от шапки (небольшой, но заметный) */
-    padding-left: 75px;             /* отступ текста от левого края */
-    padding-right: 165px;            /* отступ картинки от правого края */
+    padding-left: 120px;             /* отступ текста от левого края */
+    padding-right: 190px;            /* отступ картинки от правого края */
 }
 
 .banquet_image {
-    max-width: 585px;
+    max-width: 100%;
 }
 
 .banquet_image img {
@@ -215,14 +215,14 @@ img {
 
 .banquet_title {
     color: #000000;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 30px;
 }
 
 .banquet_time {
     color: #828282;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom: 40px;
 }
 
 .banquet_hour {
@@ -231,7 +231,7 @@ img {
 
 .banquet_place {
     color: #828282;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .banquet_place a {
@@ -245,7 +245,7 @@ img {
 
 .banquet_address {
     color: #828282;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .banquet_building {
@@ -270,12 +270,12 @@ img {
 .details_text {
     margin-top: 60px;
     margin-bottom: 30px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .details_title {
-    font-size: 25px;
+    font-size: 38px;
     color: #000000;
 }
 
@@ -284,8 +284,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 75px;
-    padding-right: 44px;;
+    padding-left: 120px;
+    padding-right: 120px;;
 }
 
 /* Левая колонка */
@@ -304,7 +304,7 @@ img {
     }
 
     .dress-code_image {
-        max-width: 585px;
+        max-width: 100%;
     }
 
     .dress-code_image img {
@@ -318,14 +318,14 @@ img {
     }
 
     .dress-code_title {
-        font-size: 25px;
+        font-size: 28px;
         color: #000000;
         margin-bottom: 20px;
     }
 
     .dress-code_suggestion-first-line,
     .dress-code_suggestion-second-line {
-        font-size: 15px;
+        font-size: 18px;
         color: #828282;
         margin-bottom: 5px;
     }
@@ -335,9 +335,9 @@ img {
         color: #CB402E;  /* звёздочка красная */
     }
     .dress-code_note {
-        font-size: 15px;
+        font-size: 14px;
         color: #828282;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     /* ===== Блок 4.2: Подарки ===== */
@@ -350,17 +350,34 @@ img {
     }
 
     .gifts_title {
-        font-size: 25px;
+        font-size: 28px;
         color: #000000;
         margin-bottom: 20px;
     }
 
-    .gifts_best-gift-first-line,
-    .gifts_best-gift-second-line,
-    .gifts_however-first-line {
-        font-size: 15px;
+    .gifts_best-gift-first-line {
+        font-size: 18px;
         color: #828282;
         margin-bottom: 5px;
+    }
+
+    .gifts_best-gift-second-line {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 20px;
+    }
+
+    .gifts_however-first-line,
+    .gifts_however-second-line {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 5px;
+    }
+
+    .gifts_however-third-line {
+        font-size: 18px;
+        color: #828282;
+        margin-bottom: 20px;
     }
 
     /* Повторный стиль для сердечка
@@ -374,9 +391,8 @@ img {
     }
 
     .gifts_wishlist {
-        font-size: 15px;
+        font-size: 18px;
         color: #828282;
-        margin-top: 20px;
         margin-bottom: 5px;
     }
 
@@ -395,7 +411,7 @@ img {
         color: #666666;
     }
     .gifts_ending {
-        font-size: 15px;
+        font-size: 18px;
         color: #828282;
     }
     
@@ -406,7 +422,7 @@ img {
 
     .flower_QR_image {
         margin-bottom: 30px;
-        max-width: 428px;
+        max-width: 100%;
     }
 
     .flower_QR_image img {
@@ -420,7 +436,7 @@ img {
     }
 
     .flowers_title {
-        font-size: 25px;
+        font-size: 28px;
         color: #000000;
         margin-bottom: 20px;
     }
@@ -429,9 +445,13 @@ img {
     .flowers_then,
     .flowers_QR-code,
     .flowers_subscription {
-        font-size: 15px;
+        font-size: 18px;
         color: #828282;
         margin-bottom: 5px;
+    }
+
+    .QR_letters {
+        letter-spacing: 4px;
     }
 
     .flowers_then a,
