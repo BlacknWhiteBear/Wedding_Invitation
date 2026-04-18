@@ -593,13 +593,14 @@ img {
 /* Ряд с двумя блоками вопросов */
 .questions_row {
     display: flex;
-    gap: 40px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .question_card {
-    flex: 1;
+    /* пока пусто */
 }
 
 .question_label {
@@ -673,7 +674,7 @@ img {
     display: block;
     width: 100%;
     padding: 14px;
-    background: #CB402E;
+    background: #DAA2A1;
     color: #ffffff;
     font-family: 'DotGothic16', monospace;
     font-size: 20px;
