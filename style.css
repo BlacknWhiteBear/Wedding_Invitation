@@ -649,19 +649,19 @@ img {
 }
 
 /* Сердечко вместо галочки */
-.styled_checkbox:checked + .checkbox_custom::after {
+.styled_checkbox:checked ~ .checkbox_custom::after {
     content: "♥";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1;
 }
 
 /* Цвет сердечка для "Да" (красный) и "Нет" (серый) будет задан через JS, но базово */
 /* Логика для JS будет добавлена позже */
-.styled_checkbox:checked + .checkbox_custom::after {
+.styled_checkbox:checked ~ .checkbox_custom::after {
     color: #CB402E;  /* по умолчанию цвет красный, для "Нет" будет изменяться через класс */
 }
 
