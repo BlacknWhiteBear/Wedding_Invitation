@@ -723,7 +723,6 @@ img {
 .donya_block {
     display: flex;
     margin-top: 80px;
-    margin-bottom: 80px;
     padding-left: 90px;
     padding-right: 90px;
     gap: 0; /* без отступов между колонками */
@@ -752,10 +751,12 @@ img {
 
 .donya_welcome {
     font-size: 58px;
+    margin-bottom: 20px;
 }
 
 .donya_info {
-    font-size: 28px;
+    font-size: 22px;
+    text-align: center;
 }
 
 /* Картинка Слони (нижняя часть ~2/3) */
