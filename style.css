@@ -748,7 +748,14 @@ img {
 
 .donya_text {
     text-align: right;
-    max-width: 80%; /* чтобы текст не упирался в край */
+}
+
+.donya_welcome {
+    font-size: 58px;
+}
+
+.donya_info {
+    font-size: 28px;
 }
 
 /* Картинка Слони (нижняя часть ~2/3) */
