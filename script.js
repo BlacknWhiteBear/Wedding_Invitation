@@ -1,35 +1,35 @@
-console.log('Скрипт стартовал');
+console.log('Script started');
 // ============================================
-// 1. КОНФИГУРАЦИЯ
+// 1. CONFIGURATION
 // ============================================
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxn3-UhV-C7zrFdQ5ycyR7FsxfgYY_4hTVriWTs05kIph4MNA7i1uY17as7zx1EHoh/exec';
-const VERIFICATION_TOKEN = 'Тут_токен';
+const VERIFICATION_TOKEN = 'YOUR_TOKEN_HERE';
 
-// Запрещённые символы (регулярное выражение)
+// Forbidden characters regex
 const FORBIDDEN_CHARS = /[<>{}[\]\\|"']/g;
 
 // ============================================
-// 2. ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
+// 2. HELPER FUNCTIONS
 // ============================================
 
-// Очистка строки: удаляем запрещённые символы, нормализуем пробелы, обрезаем
+// Clean string: remove forbidden characters, normalize spaces, trim
 function cleanString(str, maxLength) {
     if (typeof str !== 'string') return '';
-    // Удаляем запрещённые символы
+    // Remove forbidden characters
     let cleaned = str.replace(FORBIDDEN_CHARS, '');
-    // Заменяем табы, множественные пробелы на один пробел
+    // Replace tabs, multiple spaces with a single space
     cleaned = cleaned.replace(/\s+/g, ' ').trim();
-    // Обрезаем по длине
+    // Trim to max length
     if (maxLength) cleaned = cleaned.slice(0, maxLength);
     return cleaned;
 }
 
-// Проверка наличия запрещённых символов
+// Check for forbidden characters
 function hasForbiddenChars(str) {
     return FORBIDDEN_CHARS.test(str);
 }
 
-// Показать уведомление (тост)
+// Show toast notification
 function showToast(message, isError = false) {
     const toast = document.createElement('div');
     toast.textContent = message;
@@ -56,10 +56,10 @@ function showToast(message, isError = false) {
 }
 
 // ============================================
-// 3. КАСТОМНОЕ МОДАЛЬНОЕ ОКНО
+// 3. CUSTOM MODAL DIALOG
 // ============================================
 function showConfirmDialog(message, onConfirm) {
-    // Создаём затемнение
+    // Create overlay
     const overlay = document.createElement('div');
     overlay.style.cssText = `
         position: fixed;
@@ -75,7 +75,7 @@ function showConfirmDialog(message, onConfirm) {
         font-family: 'DotGothic16', monospace;
     `;
     
-    // Создаём окно
+    // Create dialog
     const dialog = document.createElement('div');
     dialog.style.cssText = `
         background: white;
@@ -88,7 +88,7 @@ function showConfirmDialog(message, onConfirm) {
         position: relative;
     `;
     
-    // Крестик закрытия
+    // Close button (X)
     const closeBtn = document.createElement('span');
     closeBtn.innerHTML = '✕';
     closeBtn.style.cssText = `
@@ -107,7 +107,7 @@ function showConfirmDialog(message, onConfirm) {
     messageElem.style.fontSize = '18px';
     
     const confirmBtn = document.createElement('button');
-    confirmBtn.textContent = 'Отправить';
+    confirmBtn.textContent = 'Submit';
     confirmBtn.style.cssText = `
         background: #CB402E;
         color: white;
@@ -128,7 +128,7 @@ function showConfirmDialog(message, onConfirm) {
     dialog.appendChild(confirmBtn);
     overlay.appendChild(dialog);
     
-    // Клик по оверлею закрывает окно
+    // Click on overlay closes dialog
     overlay.onclick = (e) => {
         if (e.target === overlay) overlay.remove();
     };
@@ -137,7 +137,7 @@ function showConfirmDialog(message, onConfirm) {
 }
 
 // ============================================
-// 4. УПРАВЛЕНИЕ СОСТОЯНИЕМ КНОПКИ И ВАЛИДАЦИЯ
+// 4. BUTTON STATE AND VALIDATION
 // ============================================
 const nameInput = document.getElementById('guest_name');
 const preferencesInput = document.getElementById('diet');
@@ -145,7 +145,7 @@ const ceremonyCheckboxes = document.querySelectorAll('input[name="ceremony"]');
 const restaurantCheckboxes = document.querySelectorAll('input[name="restaurant"]');
 const submitBtn = document.querySelector('.submit_btn');
 
-// Контейнеры для сообщений об ошибках
+// Create error message container
 function createErrorContainer(inputElement) {
     let container = inputElement.parentNode.querySelector('.error-message');
     if (!container) {
@@ -171,7 +171,7 @@ function clearError(inputElement) {
     inputElement.style.backgroundColor = '#ffffff';
 }
 
-// Проверка корректности имени
+// Validate name
 function isNameValid() {
     const rawValue = nameInput.value;
     const hasForbidden = hasForbiddenChars(rawValue);
@@ -179,19 +179,19 @@ function isNameValid() {
     return !hasForbidden && trimmed.length > 0 && trimmed.length <= 300;
 }
 
-// Проверка корректности предпочтений (только запрещённые символы)
+// Validate preferences (only forbidden characters)
 function arePreferencesValid() {
     const rawValue = preferencesInput.value;
     return !hasForbiddenChars(rawValue);
 }
 
-// Проверка, выбран ли хотя бы один чекбокс в группе
+// Check if at least one checkbox is selected in a group
 function isCheckboxGroupSelected(groupName) {
     const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
     return Array.from(checkboxes).some(cb => cb.checked);
 }
 
-// Обновление состояния кнопки
+// Update submit button state
 function updateSubmitButton() {
     const nameOk = isNameValid();
     const ceremonyOk = isCheckboxGroupSelected('ceremony');
@@ -210,7 +210,7 @@ function updateSubmitButton() {
 }
 
 // ============================================
-// 5. ВАЛИДАЦИЯ ПОЛЕЙ ПРИ ПОТЕРЕ ФОКУСА
+// 5. VALIDATION ON BLUR
 // ============================================
 function validateNameOnBlur() {
     const rawValue = nameInput.value;
@@ -218,11 +218,11 @@ function validateNameOnBlur() {
     const trimmed = rawValue.trim();
     
     if (trimmed === '') {
-        showError(nameInput, 'Поле ввода имени не может быть пустым. Введите имя или имена');
+        showError(nameInput, 'Name cannot be empty. Please enter your name.');
     } else if (hasForbidden) {
-        showError(nameInput, 'В поле ввода запрещены следующие символы: < > { } [ ] \\ | " \'');
+        showError(nameInput, 'Forbidden characters: < > { } [ ] \\ | " \'');
     } else if (trimmed.length > 300) {
-        showError(nameInput, 'Имя не может быть длиннее 300 символов');
+        showError(nameInput, 'Name cannot be longer than 300 characters.');
     } else {
         clearError(nameInput);
     }
@@ -234,14 +234,14 @@ function validatePreferencesOnBlur() {
     const hasForbidden = hasForbiddenChars(rawValue);
     
     if (hasForbidden) {
-        showError(preferencesInput, 'В поле ввода запрещены следующие символы: < > { } [ ] \\ | " \'');
+        showError(preferencesInput, 'Forbidden characters: < > { } [ ] \\ | " \'');
     } else {
         clearError(preferencesInput);
     }
     updateSubmitButton();
 }
 
-// Очистка ошибок при вводе
+// Clear errors on input
 nameInput.addEventListener('input', () => {
     clearError(nameInput);
     updateSubmitButton();
@@ -255,7 +255,7 @@ nameInput.addEventListener('blur', validateNameOnBlur);
 preferencesInput.addEventListener('blur', validatePreferencesOnBlur);
 
 // ============================================
-// 6. ЛОГИКА ЧЕКБОКСОВ (только один выбор, цвет сердечка)
+// 6. CHECKBOX LOGIC (mutual exclusion, heart color)
 // ============================================
 function setupCheckboxGroup(groupName) {
     const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
@@ -288,7 +288,7 @@ function updateHeartColor(checkbox) {
     }
 }
 
-// Добавляем CSS-переменную для сердечка
+// Inject CSS variable for heart color
 function injectHeartColorCSS() {
     const style = document.createElement('style');
     style.textContent = `
@@ -299,12 +299,12 @@ function injectHeartColorCSS() {
     document.head.appendChild(style);
 }
 
-// Запрещаем снятие последнего чекбокса в группе
+// Prevent unchecking the last checkbox in a group
 function preventUncheck(groupName) {
     const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener('click', (e) => {
-            // Если пытаются снять единственный выбранный
+            // If trying to uncheck the only checked checkbox
             if (!checkbox.checked && Array.from(checkboxes).filter(cb => cb.checked).length === 1) {
                 e.preventDefault();
             }
@@ -313,7 +313,7 @@ function preventUncheck(groupName) {
 }
 
 // ============================================
-// 7. АВТОРАСШИРЕНИЕ TEXTAREA (опционально)
+// 7. TEXTAREA AUTO RESIZE (optional)
 // ============================================
 function autoResizeTextarea() {
     if (!preferencesInput) return;
@@ -321,11 +321,11 @@ function autoResizeTextarea() {
     preferencesInput.style.height = Math.min(preferencesInput.scrollHeight, 500) + 'px';
 }
 preferencesInput.addEventListener('input', autoResizeTextarea);
-// Инициализация высоты
+// Initialize height
 setTimeout(autoResizeTextarea, 100);
 
 // ============================================
-// 8. ОТПРАВКА ДАННЫХ
+// 8. SEND DATA TO GOOGLE SHEETS
 // ============================================
 async function sendToGoogleSheets(formData) {
     const payload = {
@@ -337,41 +337,40 @@ async function sendToGoogleSheets(formData) {
     };
     
     try {
-        const response = await fetch(GOOGLE_SCRIPT_URL, {
+        await fetch(GOOGLE_SCRIPT_URL, {
             method: 'POST',
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
-        // При mode: 'no-cors' нет доступа к ответу, но если нет сетевой ошибки — считаем успехом
         return { success: true };
     } catch (error) {
-        console.error('Ошибка отправки:', error);
+        console.error('Send error:', error);
         return { success: false, error: error.message };
     }
 }
 
-// Сбор и очистка данных перед отправкой
+// Collect and clean data before sending
 function collectAndCleanData() {
     let rawName = nameInput.value;
     let rawPreferences = preferencesInput.value;
     
-    // Очистка
+    // Clean
     let cleanName = cleanString(rawName, 300);
     let cleanPreferences = cleanString(rawPreferences, 3000);
     
-    // Если после очистки имя пустое — используем "не указано" (но по валидации такого быть не должно)
-    if (cleanName === '') cleanName = 'не указано';
-    if (cleanPreferences === '') cleanPreferences = 'не указано';
+    // If name is empty after cleaning, use "not specified" (should not happen due to validation)
+    if (cleanName === '') cleanName = 'not specified';
+    if (cleanPreferences === '') cleanPreferences = 'not specified';
     
-    // Получение значений чекбоксов
+    // Get checkbox values
     const ceremonyYes = document.querySelector('input[name="ceremony"][value="yes"]')?.checked;
     const ceremonyNo = document.querySelector('input[name="ceremony"][value="no"]')?.checked;
     const restaurantYes = document.querySelector('input[name="restaurant"][value="yes"]')?.checked;
     const restaurantNo = document.querySelector('input[name="restaurant"][value="no"]')?.checked;
     
-    const ceremony = ceremonyYes ? 'Да' : (ceremonyNo ? 'Нет' : 'не указано');
-    const restaurant = restaurantYes ? 'Да' : (restaurantNo ? 'Нет' : 'не указано');
+    const ceremony = ceremonyYes ? 'Yes' : (ceremonyNo ? 'No' : 'not specified');
+    const restaurant = restaurantYes ? 'Yes' : (restaurantNo ? 'No' : 'not specified');
     
     return {
         name: cleanName,
@@ -381,42 +380,44 @@ function collectAndCleanData() {
     };
 }
 
-// Основная функция отправки (вызывается после подтверждения)
+// Main submit function (called after confirmation)
 async function performSubmit() {
     const formData = collectAndCleanData();
     const result = await sendToGoogleSheets(formData);
     
     if (result.success) {
-        showToast('Спасибо! Ваш ответ сохранён.');
-        // Опционально: очистить форму
+        showToast('Thank you! Your response has been saved.');
+        // Optional: clear form
         // nameInput.value = '';
         // preferencesInput.value = '';
         // document.querySelectorAll('.styled_checkbox').forEach(cb => cb.checked = false);
         // updateSubmitButton();
     } else {
-        showToast('Произошла ошибка при отправке. Пожалуйста, попробуйте ещё раз или свяжитесь с нами напрямую.', true);
+        showToast('An error occurred. Please try again or contact us directly.', true);
     }
 }
 
-// Обработчик клика по кнопке
+// Click handler for submit button
 function onSubmitClick(event) {
     event.preventDefault();
     
-    // Дополнительная проверка (на всякий случай)
+    // Additional check (just in case)
     if (!isNameValid() || !isCheckboxGroupSelected('ceremony') || !isCheckboxGroupSelected('restaurant') || !arePreferencesValid()) {
-        showToast('Пожалуйста, исправьте ошибки в форме', true);
+        showToast('Please fix the errors in the form before submitting.', true);
         return;
     }
     
     const preferencesFilled = preferencesInput.value.trim() !== '';
-    const message = preferencesFilled ? 'Отправить форму?' : 'Вы не указали предпочтения. Отправить форму?';
+    const message = preferencesFilled ? 'Submit the form?' : 'You did not specify any preferences. Submit anyway?';
     
     showConfirmDialog(message, async () => {
         await performSubmit();
     });
 }
 
-// Инициализация
+// ============================================
+// 9. INITIALIZATION
+// ============================================
 function init() {
     injectHeartColorCSS();
     setupCheckboxGroup('ceremony');
@@ -424,17 +425,17 @@ function init() {
     preventUncheck('ceremony');
     preventUncheck('restaurant');
     
-    // Установка начальных цветов для уже отмеченных чекбоксов
+    // Set initial colors for already checked checkboxes
     document.querySelectorAll('.styled_checkbox:checked').forEach(cb => updateHeartColor(cb));
     
-    // Первоначальная проверка кнопки
+    // Initial button state check
     updateSubmitButton();
     
-    // Назначение обработчика кнопки
+    // Attach click handler to button
     if (submitBtn) submitBtn.addEventListener('click', onSubmitClick);
 }
 
-// Запуск после загрузки DOM
+// Run after DOM is fully loaded
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
