@@ -2,7 +2,7 @@
 // 1. КОНФИГУРАЦИЯ
 // ============================================
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxn3-UhV-C7zrFdQ5ycyR7FsxfgYY_4hTVriWTs05kIph4MNA7i1uY17as7zx1EHoh/exec';
-const VERIFICATION_TOKEN = 'a7B9kL2mPq4Xz8RtV1Wy3Ns';
+const VERIFICATION_TOKEN = 'token';
 
 // Запрещенные символы (регулярное выражение)
 const FORBIDDEN_CHARS = /[<>{}[\]\\|"']/g;
