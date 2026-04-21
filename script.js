@@ -2,8 +2,8 @@
 // ============================================
 // 1. КОНФИГУРАЦИЯ
 // ============================================
-const GOOGLE_SCRIPT_URL = 'ВАШ_URL_ВЕБ_ПРИЛОЖЕНИЯ'; // Замените на ваш URL
-const VERIFICATION_TOKEN = 'ВАШ_ТОКЕН';            // Тот же, что в скрипте
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxn3-UhV-C7zrFdQ5ycyR7FsxfgYY_4hTVriWTs05kIph4MNA7i1uY17as7zx1EHoh/exec';
+const VERIFICATION_TOKEN = 'Тут_токен';
 
 // Запрещённые символы (регулярное выражение)
 const FORBIDDEN_CHARS = /[<>{}[\]\\|"']/g;
