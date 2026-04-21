@@ -2,7 +2,7 @@
 // 1. КОНФИГУРАЦИЯ
 // ============================================
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxn3-UhV-C7zrFdQ5ycyR7FsxfgYY_4hTVriWTs05kIph4MNA7i1uY17as7zx1EHoh/exec';
-const VERIFICATION_TOKEN = 'token';
+const VERIFICATION_TOKEN = 'a7B9kL2mPq4Xz8RtV1Wy3Ns';
 
 // Запрещенные символы (регулярное выражение)
 const FORBIDDEN_CHARS = /[<>{}[\]\\|"']/g;
@@ -11,7 +11,7 @@ const FORBIDDEN_CHARS = /[<>{}[\]\\|"']/g;
 // 2. ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 // ============================================
 
-// Очистка строки: удаляем запрещенные символы, нормализуем пробелы, обрезаем
+// Очистка строки: удаление запрещенных символов, нормализация пробелов, обрезка
 function cleanString(str, maxLength) {
     if (typeof str !== 'string') return '';
     let cleaned = str.replace(FORBIDDEN_CHARS, '');
