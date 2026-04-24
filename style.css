@@ -203,11 +203,14 @@ img {
     align-items: flex-start;
     padding-left: 120px;
     padding-right: 120px;
+    gap: 40px;
 }
 .details-left {
+    flex: 1;
     /* пока пусто */
 }
 .details-right {
+    flex: 1;
     /* пока пусто */
 }
 .dress-code_block {
@@ -456,11 +459,10 @@ html {
     display: flex;
     margin-bottom: 40px;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
+    gap: 40px;
 }
 .question_card {
-    /* пока пусто */
+    flex: 1;
 }
 .question_label {
     display: block;
@@ -472,9 +474,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    gap: 55px;
+    gap: 20px;
 }
 .checkbox_option {
     display: inline-flex;
@@ -585,4 +585,231 @@ html {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* ============================================ */
+/* ПРОМЕЖУТОЧНЫЕ МЕДИА-ЗАПРОСЫ (адаптация)     */
+/* ============================================ */
+
+/* Ширина ≤ 1600px */
+@media (max-width: 1600px) {
+    .CRO_block {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .banquet_block {
+        padding-left: 80px;
+        padding-right: 140px;
+    }
+    .details_text {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .details-wrapper {
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 30px;
+    }
+    .rsvp_block {
+        margin: 60px 80px;
+        padding: 30px 60px;
+    }
+    .donya_block {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/* Ширина ≤ 1400px */
+@media (max-width: 1400px) {
+    .head_title {
+        font-size: 56px;
+    }
+    .head_subtitle {
+        font-size: 22px;
+    }
+    .CRO_title {
+        font-size: 34px;
+    }
+    .CRO_time, .CRO_place, .CRO_address {
+        font-size: 22px;
+    }
+    .banquet_title {
+        font-size: 34px;
+    }
+    .banquet_time, .banquet_place, .banquet_address {
+        font-size: 22px;
+    }
+    .details_title {
+        font-size: 34px;
+    }
+    .dress-code_title, .gifts_title, .flowers_title {
+        font-size: 24px;
+    }
+    .rsvp_title {
+        font-size: 34px;
+    }
+    .checkbox_custom {
+        width: 50px;
+        height: 50px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 20px;
+    }
+    .donya_welcome {
+        font-size: 48px;
+    }
+    .donya_info {
+        font-size: 18px;
+    }
+}
+
+/* Ширина ≤ 1200px */
+@media (max-width: 1200px) {
+    .CRO_block {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .banquet_block {
+        padding-left: 40px;
+        padding-right: 60px;
+    }
+    .details_text {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .details-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 20px;
+    }
+    .rsvp_block {
+        margin: 40px 40px;
+        padding: 30px 40px;
+    }
+    .questions_row {
+        gap: 20px;
+    }
+    .checkbox_custom {
+        width: 40px;
+        height: 40px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 16px;
+    }
+    .donya_block {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .donya_welcome {
+        font-size: 42px;
+    }
+}
+
+/* Ширина ≤ 1000px */
+@media (max-width: 1000px) {
+    .head_title {
+        font-size: 48px;
+    }
+    .head_subtitle {
+        font-size: 18px;
+    }
+    .CRO_title {
+        font-size: 30px;
+    }
+    .CRO_time, .CRO_place, .CRO_address {
+        font-size: 20px;
+    }
+    .banquet_title {
+        font-size: 30px;
+    }
+    .banquet_time, .banquet_place, .banquet_address {
+        font-size: 20px;
+    }
+    .CRO_block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banquet_block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .details_text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .details-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+    .details_title {
+        font-size: 30px;
+    }
+    .dress-code_title, .gifts_title, .flowers_title {
+        font-size: 22px;
+    }
+    .dress-code_suggestion-first-line,
+    .dress-code_suggestion-second-line,
+    .dress-code_note,
+    .gifts_best-gift-first-line,
+    .gifts_best-gift-second-line,
+    .gifts_however-first-line,
+    .gifts_however-second-line,
+    .gifts_however-third-line,
+    .gifts_wishlist,
+    .gifts_ending,
+    .flowers_question,
+    .flowers_then,
+    .flowers_QR-code,
+    .flowers_subscription {
+        font-size: 16px;
+    }
+    .rsvp_title {
+        font-size: 30px;
+    }
+    .field_label, .question_label {
+        font-size: 16px;
+    }
+    .text_input, .textarea_input {
+        font-size: 14px;
+    }
+    .checkbox_custom {
+        width: 35px;
+        height: 35px;
+    }
+    .checkbox_option {
+        font-size: 14px;
+    }
+    .submit_btn {
+        font-size: 18px;
+    }
+    .donya_block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .donya_welcome {
+        font-size: 36px;
+    }
+    .donya_info {
+        font-size: 16px;
+    }
+}
+
+/* Ширина ≤ 820px (почти мобильная, но не совсем) */
+@media (max-width: 820px) {
+    .questions_row {
+        flex-direction: column;
+    }
+    .checkbox_group {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .checkbox_custom {
+        width: 30px;
+        height: 30px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 14px;
+    }
 }
