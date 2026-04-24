@@ -757,13 +757,25 @@ html {
     .CRO_title {
         font-size: 30px;
     }
-    .CRO_time, .CRO_place, .CRO_address {
+    .CRO_time {
+        font-size: 20px;
+    }
+    .CRO_place {
+        font-size: 20px;
+    }
+    .CRO_address {
         font-size: 20px;
     }
     .banquet_title {
         font-size: 30px;
     }
-    .banquet_time, .banquet_place, .banquet_address {
+    .banquet_time {
+        font-size: 20px;
+    }
+    .banquet_place {
+        font-size: 20px;
+    }
+    .banquet_address {
         font-size: 20px;
     }
     .CRO_block {
@@ -786,22 +798,54 @@ html {
     .details_title {
         font-size: 30px;
     }
-    .dress-code_title, .gifts_title, .flowers_title {
+    .dress-code_title {
         font-size: 22px;
     }
-    .dress-code_suggestion-first-line,
-    .dress-code_suggestion-second-line,
-    .dress-code_note,
-    .gifts_best-gift-first-line,
-    .gifts_best-gift-second-line,
-    .gifts_however-first-line,
-    .gifts_however-second-line,
-    .gifts_however-third-line,
-    .gifts_wishlist,
-    .gifts_ending,
-    .flowers_question,
-    .flowers_then,
-    .flowers_QR-code,
+    .gifts_title {
+        font-size: 22px;
+    }
+    .flowers_title {
+        font-size: 22px;
+    }
+    .dress-code_suggestion-first-line {
+        font-size: 16px;
+    }
+    .dress-code_suggestion-second-line {
+        font-size: 16px;
+    }
+    .dress-code_note {
+        font-size: 16px;
+    }
+    .gifts_best-gift-first-line {
+        font-size: 16px;
+    }
+    .gifts_best-gift-second-line {
+        font-size: 16px;
+    }
+    .gifts_however-first-line {
+        font-size: 16px;
+    }
+    .gifts_however-second-line {
+        font-size: 16px;
+    }
+    .gifts_however-third-line {
+        font-size: 16px;
+    }
+    .gifts_wishlist {
+        font-size: 16px;
+    }
+    .gifts_ending {
+        font-size: 16px;
+    }
+    .flowers_question {
+        font-size: 16px;
+    }
+    .flowers_then {
+        font-size: 16px;
+    }
+    .flowers_QR-code {
+        font-size: 16px;
+    }
     .flowers_subscription {
         font-size: 16px;
     }
