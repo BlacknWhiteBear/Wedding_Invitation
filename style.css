@@ -385,7 +385,7 @@ html {
     scroll-behavior: smooth;
 }
 #qr-image_container:target {
-    outline: 4px solid #CB402E;
+    outline: 0px solid #ffffff;
     outline-offset: 8px;
     transition: outline 0.2s ease;
 }
