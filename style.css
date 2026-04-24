@@ -6,43 +6,31 @@
 }
 
 body {
-    background: #000000;  /* Чёрные полосы по бокам */
-    font-family: 'DotGothic16', monospace; /* Шрифт для всего сайта */
-    font-weight: 400; /* Нормальная насыщенность для всего текста */
-    line-height: 1.2; /* Убираем межстрочный интервал */
+    background: #000000;
+    font-family: 'DotGothic16', monospace;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
-/* Сброс жирности заголовков */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-/* Центрирующий контейнер — ширина строго как в макете */
 .wedding_invitation {
-    width: 1920px;          /* Ширина десктоп-макета */
-    margin: 0 auto;         /* Центрирование по горизонтали */
-    background: #ffffff;    /* Цвет фона из макета */
+    width: 1920px;
+    margin: 0 auto;
+    background: #ffffff;
     position: relative;
     min-height: 100vh;
 }
 
-/* Для мобильных устройств */
 @media (max-width: 1920px) {
     .wedding_invitation {
-        width: 100%;        /* Отсечение горизонтального скроллинга, если экран уже 1920px */
+        width: 100%;
         max-width: 1920px;
     }
 }
 
-/* Мобильная версия — сужение контента до 360px */
-@media (max-width: 720px) {
-    .wedding_invitation {
-        max-width: 360px;   /* Ширина мобильного макета */
-        width: 100%;
-    }
-}
-
-/* Пропорциональное сжатие картинок, отсечение растяжения */
 img {
     max-width: 100%;
     height: auto;
@@ -50,522 +38,385 @@ img {
 }
 
 /* ============================================ */
-/* Блок 1: Шапка (фон + текст)                  */
+/* Блок 1: Шапка                                */
 /* ============================================ */
 .head_block {
-    /* Блок сделан контейнером для абсолютного позиционирования текста */
     position: relative;
     width: 100%;
-    /* Высота будет определяться картинкой, но задана на всякий случай */
     line-height: 0;
 }
-
-/* Картинка на всю ширину блока */
 .head_image {
     width: 100%;
     height: auto;
 }
-
-/* Текст поверх картинки */
 .head_text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #000000; /* Цвет текста */
+    color: #000000;
     width: 100%;
     line-height: 1.2;
 }
-
-/* Стиль для крупной строки */
 .head_title {
     font-family: 'DotGothic16', monospace;
     font-size: 64px;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
-
-/* Стиль для мелкой строки */
 .head_subtitle {
     font-family: 'DotGothic16', monospace;
     font-size: 25px;
 }
-
 .year_2026 {
     letter-spacing: 4px;
 }
-
 .heart_1 {
-    color: #CB402E; /* Цвет сердечка в тексте шапки */
+    color: #CB402E;
 }
 
-/* Адаптив для мобильной версии (уменьшаем шрифты) */
-@media (max-width: 720px) {
-    .head_title {
-        font-size: 28px;
-    }
-    .head_subtitle {
-        font-size: 10px;
-    }
-}
 /* ============================================ */
-/* Блок 2: ЗАГС (текст + изображение)           */
+/* Блок 2: ЗАГС                                 */
 /* ============================================ */
 .CRO_block {
     display: flex;
-    align-items: center;            /* выровнять по вертикали */
-    justify-content: space-between; /* расталкивание текста и картинки по краям*/
-    margin-top: 45px;               /* отступ от шапки (небольшой, но заметный) */
-    padding-left: 120px;             /* отступ текста от левого края */
-    padding-right: 120px;            /* отступ картинки от правого края */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
-
 .CRO_text {
-/* пока пусто */
+    /* пока пусто */
 }
-
 .CRO_title {
     color: #000000;
     font-size: 38px;
     margin-bottom: 30px;
 }
-
 .CRO_time {
     color: #828282;
     font-size: 26px;
     margin-bottom: 40px;
 }
-
 .CRO_hour {
     letter-spacing: 4px;
 }
-
 .CRO_place {
     color: #828282;
     font-size: 26px;
 }
-
 .CRO_place a {
-    color: inherit;          /* чтобы ссылка не выделялась цветом, наследует цвет CRO_place */
+    color: inherit;
 }
-
 .CRO_place a:hover {
     text-decoration: underline;
-    color: #666666;             /* небольшое затемнение при наведении (опционально) */
+    color: #666666;
 }
-
 .CRO_address {
     color: #828282;
     font-size: 26px;
 }
-
 .CRO_building {
     letter-spacing: 4px;
 }
-
 .CRO_image {
     max-width: 100%;
 }
-
 .CRO_image img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Мобильная версия */
-@media (max-width: 720px) {
-    .CRO_block {
-        flex-direction: column; /* текст и картинка друг под другом */
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 20px;
-        margin-top: 30px;
-    }
-    .CRO_image {
-        margin-left:0;
-    }
-}
 /* ============================================ */
-/* Блок 3: Ресторан (текст + изображение)       */
+/* Блок 3: Ресторан                             */
 /* ============================================ */
 .banquet_block {
     display: flex;
-    align-items: center;            /* выровнять по вертикали */
-    justify-content: space-between; /* расталкивание текста и картинки по краям*/
-    margin-top: 45px;               /* отступ от шапки (небольшой, но заметный) */
-    padding-left: 120px;             /* отступ текста от левого края */
-    padding-right: 190px;            /* отступ картинки от правого края */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-left: 120px;
+    padding-right: 190px;
 }
-
 .banquet_image {
     max-width: 100%;
 }
-
 .banquet_image img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
 .banquet_text {
-/* пока пусто */
+    /* пока пусто */
 }
-
 .banquet_title {
     color: #000000;
     font-size: 38px;
     margin-bottom: 30px;
 }
-
 .banquet_time {
     color: #828282;
     font-size: 26px;
     margin-bottom: 40px;
 }
-
 .banquet_hour {
     letter-spacing: 4px;
 }
-
 .banquet_place {
     color: #828282;
     font-size: 26px;
 }
-
 .banquet_place a {
-    color: inherit;          /* чтобы ссылка не выделялась цветом, наследует цвет CRO_place */
+    color: inherit;
 }
-
 .banquet_place a:hover {
     text-decoration: underline;
-    color: #666666;             /* небольшое затемнение при наведении (опционально) */
+    color: #666666;
 }
-
 .banquet_address {
     color: #828282;
     font-size: 26px;
 }
-
 .banquet_building {
     letter-spacing: 4px;
 }
 
-/* Мобильная версия */
-@media (max-width: 720px) {
-    .banquet_block {
-        flex-direction: column-reverse; /* главное изменение */
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 20px;
-        margin-top: 30px;
-    }
-}
 /* ============================================ */
 /* Блок 4: Детали                               */
 /* ============================================ */
-
-/* Заголовок "Детали" */
 .details_text {
     margin-top: 60px;
     margin-bottom: 30px;
     padding-left: 120px;
     padding-right: 120px;
 }
-
 .details_title {
     font-size: 38px;
     color: #000000;
 }
-
-/* Обёртка для двух колонок */
 .details-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 120px;
-    padding-right: 120px;;
+    padding-right: 120px;
 }
-
-/* Левая колонка */
 .details-left {
     /* пока пусто */
 }
-
-/* Правая колонка */
 .details-right {
     /* пока пусто */
 }
-
-    /* ===== Блок 4.1: Дресс-код ===== */
-    .dress-code_block {
-        /* пока пусто */
-    }
-
-    .dress-code_image {
-        max-width: 100%;
-    }
-
-    .dress-code_image img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .dress-code_text {
-        margin-top: 30px;
-    }
-
-    .dress-code_title {
-        font-size: 28px;
-        color: #000000;
-        margin-bottom: 20px;
-    }
-
-    .dress-code_suggestion-first-line,
-    .dress-code_suggestion-second-line {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 5px;
-    }
-
-    .dress-code_note-ref {
-        font-size: 13px;
-        color: #CB402E;  /* звёздочка красная */
-    }
-    .dress-code_note {
-        font-size: 14px;
-        color: #828282;
-        margin-top: 35px;
-    }
-
-    /* ===== Блок 4.2: Подарки ===== */
-    .gifts_block {
-        margin-bottom: 40px;
-    }
-
-    .gifts_text {
-        /* пока пусто */
-    }
-
-    .gifts_title {
-        font-size: 28px;
-        color: #000000;
-        margin-bottom: 20px;
-    }
-
-    .gifts_best-gift-first-line {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 5px;
-    }
-
-    .gifts_best-gift-second-line {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 20px;
-    }
-
-    .gifts_however-first-line,
-    .gifts_however-second-line {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 5px;
-    }
-
-    .gifts_however-third-line {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 20px;
-    }
-
-    /* Повторный стиль для сердечка
-    .heart_1 {
-        color: #CB402E; красный цвет
-    }
-    */
-
-    .rouble {
-        color: #C0C293;  /* знак рубля светло-зелёный */
-    }
-
-    .gifts_wishlist {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 5px;
-    }
-
-    .arrow_to-right,
-    .arrow_to-left {
-        font-size: 18px;
-        color: #CB402E;  /* стрелочки красные */
-        margin: 0 5px;
-    }
-    .gifts_wishlist a {
-        color: #828282;
-        text-decoration: none;
-    }
-    .gifts_wishlist a:hover {
-        text-decoration: underline;
-        color: #666666;
-    }
-    .gifts_ending {
-        font-size: 18px;
-        color: #828282;
-    }
-    
-    /* ===== Блок 4.3: Цветы ===== */
-    .flowers_block {
-        /* пока пусто */
-    }
-
-    .flower_QR_image {
-        margin-bottom: 30px;
-        max-width: 100%;
-        margin-top: 70px;
-    }
-
-    .flower_QR_image img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .flowers_text {
-        /* пока пусто */
-    }
-
-    .flowers_title {
-        font-size: 28px;
-        color: #000000;
-        margin-bottom: 20px;
-    }
-
-    .flowers_question,
-    .flowers_then,
-    .flowers_QR-code,
-    .flowers_subscription {
-        font-size: 18px;
-        color: #828282;
-        margin-bottom: 5px;
-    }
-
-    .QR_letters {
-        letter-spacing: 5px;
-    }
-
-    .flowers_then a,
-    .flowers_QR-code a {
-        color: #828282;
-        text-decoration: none;
-    }
-
-    .flowers_then a:hover,
-    .flowers_QR-code a:hover {
-        text-decoration: underline;
-        color: #666666;
-    }
-
-    .heart_2 {
-        color: #C0C293;  /* второе сердечко светло-зелёное */
-    }
-    
-    /* Плавная прокрутка и выделение QR-кода */
-    html {
-        scroll-behavior: smooth;
-    }
-    #qr-image_container:target {
-        outline: 4px solid #CB402E;
-        outline-offset: 8px;
-        transition: outline 0.2s ease;
-    }
-
-/* ===== Мобильная версия ===== */
-@media (max-width: 720px) {
-    .details_text {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
-    .details_title {
-        font-size: 28px;
-    }
-    
-    .details-wrapper {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 40px;
-    }
-    
-    .dress-code_title,
-    .gifts_title,
-    .flowers_title {
-        font-size: 22px;
-    }
-    
-    .dress-code_suggestion-first-line,
-    .dress-code_suggestion-second-line,
-    .dress-code_note,
-    .gifts_best-gift-first-line,
-    .gifts_best-gift-second-line,
-    .gifts_however-first-line,
-    .gifts_wishlist,
-    .gifts_ending,
-    .flowers_question,
-    .flowers_then,
-    .flowers_QR-code,
-    .flowers_subscription,
-    .dress-code_note-ref {
-        font-size: 12px;
-    }
-    
-    .arrow_to-right,
-    .arrow_to-left {
-        font-size: 12px;
-    }
-    
+.dress-code_block {
+    /* пока пусто */
 }
+.dress-code_image {
+    max-width: 100%;
+}
+.dress-code_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.dress-code_text {
+    margin-top: 30px;
+}
+.dress-code_title {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.dress-code_suggestion-first-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.dress-code_suggestion-second-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.dress-code_note-ref {
+    font-size: 13px;
+    color: #CB402E;
+}
+.dress-code_note {
+    font-size: 14px;
+    color: #828282;
+    margin-top: 35px;
+}
+.gifts_block {
+    margin-bottom: 40px;
+}
+.gifts_text {
+    /* пока пусто */
+}
+.gifts_title {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.gifts_best-gift-first-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.gifts_best-gift-second-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 20px;
+}
+.gifts_however-first-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.gifts_however-second-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.gifts_however-third-line {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 20px;
+}
+.rouble {
+    color: #C0C293;
+}
+.gifts_wishlist {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.arrow_to-right {
+    font-size: 18px;
+    color: #CB402E;
+    margin: 0 5px;
+}
+.arrow_to-left {
+    font-size: 18px;
+    color: #CB402E;
+    margin: 0 5px;
+}
+.gifts_wishlist a {
+    color: #828282;
+    text-decoration: none;
+}
+.gifts_wishlist a:hover {
+    text-decoration: underline;
+    color: #666666;
+}
+.gifts_ending {
+    font-size: 18px;
+    color: #828282;
+}
+.flowers_block {
+    /* пока пусто */
+}
+.flower_QR_image {
+    margin-bottom: 30px;
+    max-width: 100%;
+    margin-top: 70px;
+}
+.flower_QR_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.flowers_text {
+    /* пока пусто */
+}
+.flowers_title {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.flowers_question {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.flowers_then {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.flowers_QR-code {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.flowers_subscription {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.QR_letters {
+    letter-spacing: 5px;
+}
+.flowers_then a {
+    color: #828282;
+    text-decoration: none;
+}
+.flowers_QR-code a {
+    color: #828282;
+    text-decoration: none;
+}
+.flowers_then a:hover {
+    text-decoration: underline;
+    color: #666666;
+}
+.flowers_QR-code a:hover {
+    text-decoration: underline;
+    color: #666666;
+}
+.heart_2 {
+    color: #C0C293;
+}
+html {
+    scroll-behavior: smooth;
+}
+#qr-image_container:target {
+    outline: 4px solid #CB402E;
+    outline-offset: 8px;
+    transition: outline 0.2s ease;
+}
+
 /* ============================================ */
 /* Блок 5: Опросник                             */
 /* ============================================ */
 .rsvp_block {
-    margin: 80px 120px 120px;   /* центрирование по горизонтали, отступ сверху 80px, слева и справа по 120 */
+    margin: 80px 120px 120px;
     background-image: url('images/Web/Survey_background.png');
-    background-size: cover;     /* картинка покрывает весь блок */
+    background-size: cover;
     background-position: center;
-    border: 4px solid #000000;  /* чёрная обводка */
-    border-radius: 8px;        /* скругление углов (незначительное, можете уменьшить до 8px) */
-    padding: 40px 90px;         /* внутренние отступы: сверху/снизу 40px, слева/справа 60px */
+    border: 4px solid #000000;
+    border-radius: 8px;
+    padding: 40px 90px;
 }
-
 .rsvp_title {
     text-align: center;
     font-size: 38px;
     color: #000000;
     margin-bottom: 40px;
 }
-
 .rsvp_form {
     /* пока пусто */
 }
-
-/* Общие стили для полей */
 .field_group {
     margin-bottom: 40px;
 }
-
 .field_label {
     display: block;
     font-size: 18px;
     color: #000000;
     margin-bottom: 8px;
 }
-
-.text_input,
-.textarea_input {
+.text_input {
     width: 100%;
     padding: 12px 16px;
     font-family: 'DotGothic16', monospace;
@@ -578,19 +429,29 @@ img {
     transition: all 0.2s ease;
     box-sizing: border-box;
 }
-
-.text_input::placeholder,
+.textarea_input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'DotGothic16', monospace;
+    font-size: 16px;
+    color: #000000;
+    background: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 200px;
+}
+.text_input::placeholder {
+    color: #828282;
+    font-family: 'DotGothic16', monospace;
+}
 .textarea_input::placeholder {
     color: #828282;
     font-family: 'DotGothic16', monospace;
 }
-
-.textarea_input {
-    resize: vertical;
-    min-height: 200px;
-}
-
-/* Ряд с двумя блоками вопросов */
 .questions_row {
     display: flex;
     margin-bottom: 40px;
@@ -598,18 +459,15 @@ img {
     padding-left: 100px;
     padding-right: 100px;
 }
-
 .question_card {
     /* пока пусто */
 }
-
 .question_label {
     display: block;
     font-size: 18px;
     color: #000000;
     margin-bottom: 16px;
 }
-
 .checkbox_group {
     display: flex;
     justify-content: space-around;
@@ -618,7 +476,6 @@ img {
     padding-right: 50px;
     gap: 55px;
 }
-
 .checkbox_option {
     display: inline-flex;
     align-items: center;
@@ -627,16 +484,12 @@ img {
     font-size: 16px;
     color: #000000;
 }
-
-/* Скрытие родного чекбокса */
 .styled_checkbox {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
-
-/* Кастомный чекбокс */
 .checkbox_custom {
     display: inline-block;
     width: 60px;
@@ -647,8 +500,6 @@ img {
     position: relative;
     transition: background 0.1s ease;
 }
-
-/* Сердечко вместо галочки */
 .styled_checkbox:checked ~ .checkbox_custom::after {
     content: "♥";
     position: absolute;
@@ -657,20 +508,8 @@ img {
     transform: translate(-50%, -50%);
     font-size: 24px;
     line-height: 1;
+    color: #CB402E;
 }
-
-/* Цвет сердечка для "Да" (красный) и "Нет" (серый) будет задан через JS, но базово */
-/* Логика для JS будет добавлена позже */
-.styled_checkbox:checked ~ .checkbox_custom::after {
-    color: #CB402E;  /* по умолчанию цвет красный, для "Нет" будет изменяться через класс */
-}
-
-/* Отдельный класс для чекбокса "Нет" при checked */
-.checkbox_option.no_checked .checkbox_custom::after {
-    color: #828282;
-}
-
-/* Кнопка отправки */
 .submit_btn {
     display: block;
     width: 100%;
@@ -685,38 +524,11 @@ img {
     transition: transform 0.1s ease, background 0.2s ease;
     text-align: center;
 }
-
 .submit_btn:active {
     transform: scale(0.97);
     background: #a83222;
 }
 
-/* Адаптив для мобилок */
-@media (max-width: 720px) {
-    .rsvp_block {
-        padding: 30px 20px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .rsvp_title {
-        font-size: 24px;
-    }
-    .questions_row {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .field_label,
-    .question_label {
-        font-size: 16px;
-    }
-    .text_input,
-    .textarea_input {
-        font-size: 14px;
-    }
-    .submit_btn {
-        font-size: 18px;
-    }
-}
 /* ============================================ */
 /* Блок 6: Доня                                 */
 /* ============================================ */
@@ -725,93 +537,52 @@ img {
     margin-top: 80px;
     padding-left: 90px;
     padding-right: 90px;
-    gap: 0; /* без отступов между колонками */
+    gap: 0;
 }
-
-/* Левая колонка (4/5) */
 .donya_left {
     flex: 4;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* вертикальное центрирование содержимого */
+    justify-content: center;
 }
-
-/* Контейнер для текста (верхняя часть ~1/3) */
 .donya_text_wrapper {
     display: flex;
-    justify-content: flex-end; /* прижимаем текст к правому краю левой колонки */
+    justify-content: flex-end;
     align-items: center;
-    /* Высота определится содержимым, но можно задать min-height: 33% если нужно строго */
     padding: 20px 0;
 }
-
 .donya_text {
     text-align: right;
 }
-
 .donya_welcome {
     font-size: 58px;
     margin-bottom: 20px;
 }
-
 .donya_info {
     font-size: 22px;
     text-align: center;
 }
-
-/* Картинка Слони (нижняя часть ~2/3) */
 .donya_left .slonya_image {
     display: flex;
     justify-content: center;
     padding: 20px 0;
 }
-
-/* Правая колонка (1/5) */
 .donya_right {
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .dodya_image {
     max-width: 100%;
 }
-
-/* Общие стили для картинок */
-.slonya_image img,
-.dodya_image img {
+.slonya_image img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-/* Адаптив для мобильной версии */
-@media (max-width: 720px) {
-    .donya_block {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 30px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .donya_left {
-        flex: auto;
-    }
-    .donya_text_wrapper {
-        justify-content: center;
-    }
-    .donya_text {
-        text-align: center;
-        max-width: 100%;
-    }
-    .donya_right {
-        flex: auto;
-        justify-content: center;
-    }
-    .slonya_image, .dodya_image {
-        max-width: 80%;
-        margin: 0 auto;
-    }
+.dodya_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
