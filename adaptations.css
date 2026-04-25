@@ -85,7 +85,7 @@
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 80px;
-        padding-right: 140px;
+        padding-right: 80px;
     }
     .banquet_title {
         font-size: 30px;
@@ -151,7 +151,7 @@
         font-size: 16px;
     }
         .flower_QR_image img {
-        max-width: 90%;
+        max-width: 98%;
     }
     .flowers_title {
         font-size: 22px;
@@ -170,7 +170,7 @@
     }
     /* Блок 5: Опросник */
     .rsvp_block {
-        margin: 60px 250px 60px;
+        margin: 60px 210px 60px;
         padding: 30px 50px;
     }
     .rsvp_title {
@@ -190,10 +190,7 @@
         min-height: 160px;
     }
     .questions_row {
-        gap: 30px;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-bottom: 30px;
+        /* пока пусто */
     }
     .question_label {
         font-size: 16px;
@@ -236,17 +233,9 @@
     }
 }
 /* ============================================ */
-/* АДАПТАЦИЯ 1300px (только QR)                 */
+/* АДАПТАЦИЯ 1400px                             */
 /* ============================================ */
-@media (max-width: 1300px) {
-    .flower_QR_image img {
-        max-width: 80%;
-    }
-}
-/* ============================================ */
-/* АДАПТАЦИЯ 1200px                             */
-/* ============================================ */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     /* Блок 1: Шапка */
     .head_title {
         font-size: 48px;
@@ -276,7 +265,7 @@
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 40px;
-        padding-right: 60px;
+        padding-right: 40px;
     }
     .banquet_title {
         font-size: 28px;
@@ -375,10 +364,7 @@
         min-height: 140px;
     }
     .questions_row {
-        gap: 25px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-bottom: 25px;
+        /* пока пусто */
     }
     .question_label {
         font-size: 15px;
