@@ -344,7 +344,7 @@
     }
     /* Блок 5: Опросник */
     .rsvp_block {
-        margin: 40px 250px 40px;
+        margin: 40px 195px 40px;
         padding: 25px 35px;
     }
     .rsvp_title {
@@ -364,22 +364,23 @@
         min-height: 140px;
     }
     .questions_row {
-        /* пока пусто */
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .question_label {
         font-size: 15px;
     }
     .checkbox_group {
         gap: 25px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
     .checkbox_option {
         font-size: 14px;
     }
     .checkbox_custom {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .styled_checkbox:checked ~ .checkbox_custom::after {
         font-size: 16px;
