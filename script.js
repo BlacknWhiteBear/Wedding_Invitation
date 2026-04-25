@@ -98,6 +98,7 @@ function showConfirmDialog(message, onConfirm) {
     messageElem.textContent = message;
     messageElem.style.marginBottom = '24px';
     messageElem.style.fontSize = '18px';
+    messageElem.style.paddingRight = '20px';
     
     const confirmBtn = document.createElement('button');
     confirmBtn.textContent = 'Отправить';
