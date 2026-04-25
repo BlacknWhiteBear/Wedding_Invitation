@@ -524,6 +524,18 @@ html {
     transform: scale(0.97);
     background: #a83222;
 }
+.rsvp_note_text {
+    /* пока пусто */
+}
+.rsvp_note {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 15px;
+}
+.rsvp_note-ref {
+font-size: 18px;
+color: #CB402E;
+}
 /* ============================================ */
 /* Блок 6: Доня                                 */
 /* ============================================ */
