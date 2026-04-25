@@ -208,7 +208,7 @@ function validateNameOnBlur() {
     const trimmed = rawValue.trim();
     
     if (trimmed === '') {
-        showError(nameInput, 'Поле ввода имени не может быть пустым. Введите имя или имена');
+        showError(nameInput, 'Поле ввода имени не может быть пустым. Введите имя или имена.');
     } else if (hasForbidden) {
         showError(nameInput, 'Запрещенные символы: < > { } [ ] \\ | " \'');
     } else if (trimmed.length > 300) {
