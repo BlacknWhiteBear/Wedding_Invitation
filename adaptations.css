@@ -14,7 +14,7 @@
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 80px;
-        padding-right: 120px;
+        padding-right: 80px;
     }
     /* Блок 4: Детали */
     .details_text {
@@ -31,7 +31,7 @@
     }
     /* Блок 5: Опросник */
     .rsvp_block {
-        margin: 60px 80px 100px;
+        margin: 60px 210px 100px;
         padding: 30px 50px;
     }
     .rsvp_title {
