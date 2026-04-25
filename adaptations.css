@@ -14,7 +14,7 @@
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 80px;
-        padding-right: 80px;
+        padding-right: 149px;
     }
     /* Блок 4: Детали */
     .details_text {
@@ -82,10 +82,16 @@
     .CRO_address {
         font-size: 22px;
     }
+    .CRO_image img {
+        max-width: 760.583px;
+    }
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 80px;
-        padding-right: 80px;
+        padding-right: 120px;
+    }
+    .banquet_image img {
+        max-width: 760.583px;
     }
     .banquet_title {
         font-size: 30px;
@@ -149,6 +155,9 @@
     }
     .gifts_ending {
         font-size: 16px;
+    }
+    .flower_QR_image img {
+        max-width: 98%;
     }
     .flowers_title {
         font-size: 22px;
