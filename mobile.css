@@ -36,26 +36,22 @@
 /* АДАПТАЦИЯ 720px                              */
 /* ============================================ */
 @media (max-width: 720px) {
-
     /* Общий контейнер */
     .wedding_invitation {
         max-width: 360px;
         width: 100%;
     }
-
     /* Блок 1: Шапка */
     .head_image {
         height: 250px;
     }
-    
     .head_title {
         font-size: 28px;
     }
     .head_subtitle {
         font-size: 10px;
     }
-
-    /* Блок 2: ЗАГС (текст, потом картинка) */
+    /* Блок 2: ЗАГС */
     .CRO_block {
         flex-direction: column;
         padding-left: 20px;
@@ -66,9 +62,10 @@
     .CRO_image {
         margin-left: 0;
     }
-    /* текст остаётся без изменений, картинка под ним */
-
-    /* Блок 3: Ресторан (текст, потом картинка) */
+    .CRO_image img {
+        max-width: 100%;
+    }
+    /* Блок 3: Ресторан */
     .banquet_block {
         flex-direction: column;
         padding-left: 20px;
@@ -77,12 +74,14 @@
         margin-top: 30px;
     }
     .banquet_image {
-        order: 2; /* картинка после текста */
+        order: 2;
+    }
+    .banquet_image img {
+        max-width: 100%;
     }
     .banquet_text {
         order: 1;
     }
-
     /* Блок 4: Детали */
     .details_text {
         padding-left: 20px;
@@ -99,39 +98,31 @@
         padding-right: 20px;
         gap: 40px;
     }
-    /* Левая колонка (палитра, дресс-код) и правая (подарки, цветы) идут вертикально */
-    /* Переопределяем порядок: сначала картинка палитры, потом текст дресс-кода, потом подарки, потом QR, потом цветы */
     .details-left {
         order: 1;
     }
     .details-right {
         order: 2;
     }
-    /* Внутри левой колонки: картинка, потом текст */
     .dress-code_image {
         order: 1;
     }
     .dress-code_text {
         order: 2;
     }
-    /* Внутри правой колонки: подарки, потом цветы (QR и текст) */
     .gifts_block {
         order: 1;
     }
     .flowers_block {
         order: 2;
     }
-    /* Для цветов: QR-код можно скрыть, либо оставить, но уменьшить */
     .flower_QR_image {
         max-width: 80%;
         margin: 0 auto 20px;
     }
-    /* Текст цветов после QR */
     .flowers_text {
         order: 2;
     }
-
-    /* Размеры текстов в деталях */
     .dress-code_title {
         font-size: 22px;
     }
@@ -148,7 +139,8 @@
         font-size: 12px;
     }
     .dress-code_note {
-        font-size: 12px;
+        font-size: 10px;
+        margin-top: 20px;
     }
     .gifts_best-gift-first-line {
         font-size: 12px;
@@ -171,6 +163,9 @@
     .gifts_ending {
         font-size: 12px;
     }
+    .flower_QR_image img {
+        max-width: 100%;
+    }
     .flowers_question {
         font-size: 12px;
     }
@@ -192,7 +187,6 @@
     .arrow_to-left {
         font-size: 12px;
     }
-
     /* Блок 5: Опросник */
     .rsvp_block {
         padding: 30px 20px;
@@ -237,7 +231,7 @@
     .rsvp_note {
         font-size: 14px;
     }
-    /* Блок 6: Доня (Ждем вас, Слоня, Додя) */
+    /* Блок 6: Доня */
     .donya_block {
         flex-direction: column;
         padding-left: 20px;
@@ -268,7 +262,6 @@
         max-width: 80%;
         margin: 0 auto;
     }
-    /* Убедимся, что порядок: текст, потом Слоня, потом Додя */
     .donya_left .donya_text_wrapper {
         order: 1;
     }
