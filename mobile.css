@@ -201,7 +201,9 @@
     .submit_btn {
         font-size: 18px;
     }
-
+    .rsvp_note {
+        font-size: 14px;
+    }
     /* Блок 6: Доня (Ждем вас, Слоня, Додя) */
     .donya_block {
         flex-direction: column;
