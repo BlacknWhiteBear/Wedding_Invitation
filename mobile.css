@@ -1,7 +1,40 @@
 /* ============================================ */
-/* МОБИЛЬНАЯ ВЕРСИЯ (до 720px)                  */
+/* АДАПТАЦИЯ 820px                              */
 /* ============================================ */
+@media (max-width: 820px) {
 
+    /* Блок 5: Опросник — особые изменения */
+        .rsvp_block {
+        margin: 30px 280px 30px;
+        padding: 20px 45px;
+    }
+    .questions_row {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .checkbox_group {
+        justify-content: flex-start;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .checkbox_custom {
+        width: 35px;
+        height: 35px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 14px;
+    }
+    .rsvp_note {
+        font-size: 12px;
+        color: #000000;
+    }
+}
+/* ============================================ */
+/* АДАПТАЦИЯ 720px                              */
+/* ============================================ */
 @media (max-width: 720px) {
 
     /* Общий контейнер */
