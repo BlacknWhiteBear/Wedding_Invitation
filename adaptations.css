@@ -1,7 +1,7 @@
 /* ============================================ */
 /* АДАПТАЦИЯ 1600px                             */
 /* ============================================ */
-@media (max-width: 1600px) {
+@media (max-width: 1650px) {
     /* Блок 1: Шапка */
     .head_title {
         font-size: 56px;
@@ -14,7 +14,7 @@
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 80px;
-        padding-right: 140px;
+        padding-right: 120px;
     }
     /* Блок 4: Детали */
     .details_text {
@@ -223,6 +223,10 @@
         font-size: 18px;
         padding: 12px;
     }
+    .rsvp_note {
+        font-size: 14px;
+        color: #000000;
+    }
     /* Блок 6: Доня */
     .donya_block {
         padding-left: 60px;
@@ -402,6 +406,10 @@
         font-size: 16px;
         padding: 10px;
     }
+    .rsvp_note {
+        font-size: 13px;
+        color: #000000;
+    }
     /* Блок 6: Доня */
     .donya_block {
         padding-left: 40px;
@@ -455,6 +463,9 @@
     .styled_checkbox:checked ~ .checkbox_custom::after {
         font-size: 14px;
     }
-
+    .rsvp_note {
+        font-size: 12px;
+        color: #000000;
+    }
     /* При необходимости добавьте другие блоки */
 }
