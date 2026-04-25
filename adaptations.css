@@ -31,7 +31,7 @@
     }
     /* Блок 5: Опросник */
     .rsvp_block {
-        margin: 60px 210px 100px;
+        margin: 60px 210px 60px;
         padding: 30px 50px;
     }
     .rsvp_title {
@@ -170,7 +170,7 @@
     }
     /* Блок 5: Опросник */
     .rsvp_block {
-        margin: 60px 80px 100px;
+        margin: 60px 250px 60px;
         padding: 30px 50px;
     }
     .rsvp_title {
@@ -355,7 +355,7 @@
     }
     /* Блок 5: Опросник */
     .rsvp_block {
-        margin: 40px 40px;
+        margin: 40px 250px 40px;
         padding: 25px 35px;
     }
     .rsvp_title {
@@ -440,6 +440,10 @@
 @media (max-width: 820px) {
 
     /* Блок 5: Опросник — особые изменения */
+        .rsvp_block {
+        margin: 30px 280px 30px;
+        padding: 20px 45px;
+    }
     .questions_row {
         flex-direction: column;
         gap: 20px;
