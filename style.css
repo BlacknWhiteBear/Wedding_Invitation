@@ -4,18 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: #000000;
     font-family: 'DotGothic16', monospace;
     font-weight: 400;
     line-height: 1.2;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
-
 .wedding_invitation {
     width: 1920px;
     margin: 0 auto;
@@ -23,20 +20,17 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     min-height: 100vh;
 }
-
 @media (max-width: 1920px) {
     .wedding_invitation {
         width: 100%;
         max-width: 1920px;
     }
 }
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
 /* ============================================ */
 /* Блок 1: Шапка                                */
 /* ============================================ */
@@ -75,8 +69,6 @@ img {
 .year_2026 {
     letter-spacing: 4px;
 }
-
-
 /* ============================================ */
 /* Блок 2: ЗАГС                                 */
 /* ============================================ */
@@ -131,7 +123,6 @@ img {
     height: auto;
     display: block;
 }
-
 /* ============================================ */
 /* Блок 3: Ресторан                             */
 /* ============================================ */
@@ -186,7 +177,6 @@ img {
 .banquet_building {
     letter-spacing: 4px;
 }
-
 /* ============================================ */
 /* Блок 4: Детали                               */
 /* ============================================ */
@@ -389,7 +379,6 @@ html {
     outline-offset: 8px;
     transition: outline 0.2s ease;
 }
-
 /* ============================================ */
 /* Блок 5: Опросник                             */
 /* ============================================ */
@@ -535,7 +524,6 @@ html {
     transform: scale(0.97);
     background: #a83222;
 }
-
 /* ============================================ */
 /* Блок 6: Доня                                 */
 /* ============================================ */
@@ -592,312 +580,4 @@ html {
     max-width: 100%;
     height: auto;
     display: block;
-}
-
-/* ============================================ */
-/* ПРОМЕЖУТОЧНЫЕ МЕДИА-ЗАПРОСЫ (адаптация)     */
-/* ============================================ */
-
-/* Ширина ≤ 1500px — QR — начало*/
-@media (max-width: 1500px) {
-    .flower_QR_image img {
-        max-width: 85%
-    }
-
-/* Ширина ≤ 1400px — QR */
-@media (max-width: 1400px) {
-    .flower_QR_image img {
-        max-width: 80%
-    }
-
-/* Ширина ≤ 13000px — QR */
-@media (max-width: 1300px) {
-    .flower_QR_image img {
-        max-width: 65%
-    }
-
-/* Ширина ≤ 1150px — QR */
-@media (max-width: 1150px) {
-    .flower_QR_image img {
-        max-width: 55%
-    }
-
-/* Ширина ≤ 1100px — QR */
-@media (max-width: 1100px) {
-    .flower_QR_image img {
-        max-width: 50%
-    }
-
-/* Ширина ≤ 950px — QR */
-@media (max-width: 950px) {
-    .flower_QR_image img {
-        max-width: 35%
-    }
-/* Ширина ≤ 1500px — QR — конец*/
-
-/* Ширина ≤ 1600px */
-@media (max-width: 1600px) {
-    .CRO_block {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-    .banquet_block {
-        padding-left: 80px;
-        padding-right: 140px;
-    }
-    .details_text {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-    .details-wrapper {
-        padding-left: 80px;
-        padding-right: 80px;
-        gap: 30px;
-    }
-    .rsvp_block {
-        margin: 60px 80px;
-        padding: 30px 60px;
-    }
-    .donya_block {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-
-/* Ширина ≤ 1400px */
-@media (max-width: 1400px) {
-    .head_title {
-        font-size: 56px;
-    }
-    .head_subtitle {
-        font-size: 22px;
-    }
-    .CRO_title {
-        font-size: 34px;
-    }
-    .CRO_time, .CRO_place, .CRO_address {
-        font-size: 22px;
-    }
-    .banquet_title {
-        font-size: 34px;
-    }
-    .banquet_time, .banquet_place, .banquet_address {
-        font-size: 22px;
-    }
-    .details_title {
-        font-size: 34px;
-    }
-    .dress-code_title, .gifts_title, .flowers_title {
-        font-size: 24px;
-    }
-    .rsvp_title {
-        font-size: 34px;
-    }
-    .checkbox_custom {
-        width: 50px;
-        height: 50px;
-    }
-    .styled_checkbox:checked ~ .checkbox_custom::after {
-        font-size: 20px;
-    }
-    .donya_welcome {
-        font-size: 48px;
-    }
-    .donya_info {
-        font-size: 18px;
-    }
-}
-
-/* Ширина ≤ 1200px */
-@media (max-width: 1200px) {
-    .CRO_block {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .banquet_block {
-        padding-left: 40px;
-        padding-right: 60px;
-    }
-    .details_text {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .details-wrapper {
-        padding-left: 40px;
-        padding-right: 40px;
-        gap: 20px;
-    }
-    .rsvp_block {
-        margin: 40px 40px;
-        padding: 30px 40px;
-    }
-    .questions_row {
-        gap: 20px;
-    }
-    .checkbox_custom {
-        width: 40px;
-        height: 40px;
-    }
-    .styled_checkbox:checked ~ .checkbox_custom::after {
-        font-size: 16px;
-    }
-    .donya_block {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .donya_welcome {
-        font-size: 42px;
-    }
-}
-
-/* Ширина ≤ 1000px */
-@media (max-width: 1000px) {
-    .head_title {
-        font-size: 48px;
-    }
-    .head_subtitle {
-        font-size: 18px;
-    }
-    .CRO_title {
-        font-size: 30px;
-    }
-    .CRO_time {
-        font-size: 20px;
-    }
-    .CRO_place {
-        font-size: 20px;
-    }
-    .CRO_address {
-        font-size: 20px;
-    }
-    .banquet_title {
-        font-size: 30px;
-    }
-    .banquet_time {
-        font-size: 20px;
-    }
-    .banquet_place {
-        font-size: 20px;
-    }
-    .banquet_address {
-        font-size: 20px;
-    }
-    .CRO_block {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .banquet_block {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .details_text {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .details-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 20px;
-    }
-    .details_title {
-        font-size: 30px;
-    }
-    .dress-code_title {
-        font-size: 22px;
-    }
-    .gifts_title {
-        font-size: 22px;
-    }
-    .flowers_title {
-        font-size: 22px;
-    }
-    .dress-code_suggestion-first-line {
-        font-size: 16px;
-    }
-    .dress-code_suggestion-second-line {
-        font-size: 16px;
-    }
-    .dress-code_note {
-        font-size: 16px;
-    }
-    .gifts_best-gift-first-line {
-        font-size: 16px;
-    }
-    .gifts_best-gift-second-line {
-        font-size: 16px;
-    }
-    .gifts_however-first-line {
-        font-size: 16px;
-    }
-    .gifts_however-second-line {
-        font-size: 16px;
-    }
-    .gifts_however-third-line {
-        font-size: 16px;
-    }
-    .gifts_wishlist {
-        font-size: 16px;
-    }
-    .gifts_ending {
-        font-size: 16px;
-    }
-    .flowers_question {
-        font-size: 16px;
-    }
-    .flowers_then {
-        font-size: 16px;
-    }
-    .flowers_QR-code {
-        font-size: 16px;
-    }
-    .flowers_subscription {
-        font-size: 16px;
-    }
-    .rsvp_title {
-        font-size: 30px;
-    }
-    .field_label, .question_label {
-        font-size: 16px;
-    }
-    .text_input, .textarea_input {
-        font-size: 14px;
-    }
-    .checkbox_custom {
-        width: 35px;
-        height: 35px;
-    }
-    .checkbox_option {
-        font-size: 14px;
-    }
-    .submit_btn {
-        font-size: 18px;
-    }
-    .donya_block {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .donya_welcome {
-        font-size: 36px;
-    }
-    .donya_info {
-        font-size: 16px;
-    }
-}
-
-/* Ширина ≤ 820px (почти мобильная, но не совсем) */
-@media (max-width: 820px) {
-    .questions_row {
-        flex-direction: column;
-    }
-    .checkbox_group {
-        justify-content: flex-start;
-        gap: 15px;
-    }
-    .checkbox_custom {
-        width: 30px;
-        height: 30px;
-    }
-    .styled_checkbox:checked ~ .checkbox_custom::after {
-        font-size: 14px;
-    }
 }
