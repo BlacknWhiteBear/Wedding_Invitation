@@ -379,6 +379,12 @@ img {
 .heart_2 {
     color: #C0C293;
 }
+.account_number {
+    letter-spacing: 4px;
+}
+.flowers_subscription {
+    letter-spacing: 4px;
+}
 html {
     scroll-behavior: smooth;
 }
