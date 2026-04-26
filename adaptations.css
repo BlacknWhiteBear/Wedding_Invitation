@@ -1369,3 +1369,688 @@
         font-size: 12px;
     }
 }
+/* ============================================ */
+/* АДАПТАЦИЯ 840px                              */
+/* ============================================ */
+@media (max-width: 840px) {
+    /* Блок 1: Шапка */
+    .head_title {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+    .head_subtitle {
+        font-size: 13px;
+    }
+    /* Блок 2: ЗАГС */
+    .CRO_block {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: clamp(12px, 8%, 15px);
+    }
+    .CRO_title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .CRO_time {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .CRO_place {
+        font-size: 15px;
+    }
+    .CRO_address {
+        font-size: 15px;
+    }
+    /* Блок 3: Ресторан */
+    .banquet_block {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: clamp(12px, 8%, 15px);
+    }
+    .banquet_title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .banquet_time {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .banquet_place {
+        font-size: 15px;
+    }
+    .banquet_address {
+        font-size: 15px;
+    }
+    /* Блок 4: Детали */
+    .details_text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .details-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 15px;
+    }
+    .details_title {
+        font-size: 22px;
+    }
+    .dress-code_title {
+        font-size: 18px;
+    }
+    .dress-code_suggestion-first-line {
+        font-size: 13px;
+    }
+    .dress-code_suggestion-second-line {
+        font-size: 13px;
+    }
+    .dress-code_note {
+        font-size: 11px;
+    }
+    .gifts_title {
+        font-size: 18px;
+    }
+    .gifts_best-gift-first-line {
+        font-size: 13px;
+    }
+    .gifts_best-gift-second-line {
+        font-size: 13px;
+    }
+    .gifts_however-first-line {
+        font-size: 13px;
+    }
+    .gifts_however-second-line {
+        font-size: 13px;
+    }
+    .gifts_however-third-line {
+        font-size: 13px;
+    }
+    .gifts_wishlist {
+        font-size: 13px;
+    }
+    .gifts_ending {
+        font-size: 13px;
+    }
+    .flowers_title {
+        font-size: 18px;
+    }
+    .flowers_question {
+        font-size: 13px;
+    }
+    .flowers_then {
+        font-size: 13px;
+    }
+    .flowers_QR-code {
+        font-size: 13px;
+    }
+    .flowers_subscription {
+        font-size: 13px;
+    }
+    /* Блок 5: Опросник */
+    .rsvp_block {
+        margin: 25px 70px 25px;
+        padding: 15px 20px;
+    }
+    .rsvp_title {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+    .field_label {
+        font-size: 13px;
+    }
+    .text_input {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+    .textarea_input {
+        font-size: 12px;
+        padding: 7px 10px;
+        min-height: 110px;
+    }
+    .questions_row {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .question_label {
+        font-size: 13px;
+    }
+    .checkbox_group {
+        gap: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .checkbox_option {
+        font-size: 12px;
+    }
+    .checkbox_custom {
+        width: 38px;
+        height: 38px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 15px;
+    }
+    .submit_btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .rsvp_note {
+        font-size: 11px;
+    }
+    /* Блок 6: Доня */
+    .donya_block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .donya_welcome {
+        font-size: 30px;
+    }
+    .donya_info {
+        font-size: 13px;
+    }
+}
+
+/* ============================================ */
+/* АДАПТАЦИЯ 800px                              */
+/* ============================================ */
+@media (max-width: 800px) {
+    /* Блок 1: Шапка */
+    .head_title {
+        font-size: 32px;
+    }
+    .head_subtitle {
+        font-size: 12px;
+    }
+    /* Блок 2: ЗАГС */
+    .CRO_block {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .CRO_title {
+        font-size: 19px;
+    }
+    .CRO_time {
+        font-size: 14px;
+    }
+    .CRO_place {
+        font-size: 14px;
+    }
+    .CRO_address {
+        font-size: 14px;
+    }
+    /* Блок 3: Ресторан */
+    .banquet_block {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .banquet_title {
+        font-size: 19px;
+    }
+    .banquet_time {
+        font-size: 14px;
+    }
+    .banquet_place {
+        font-size: 14px;
+    }
+    .banquet_address {
+        font-size: 14px;
+    }
+    /* Блок 4: Детали */
+    .details_text {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .details-wrapper {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .details_title {
+        font-size: 20px;
+    }
+    .dress-code_title {
+        font-size: 17px;
+    }
+    .dress-code_suggestion-first-line {
+        font-size: 12px;
+    }
+    .dress-code_suggestion-second-line {
+        font-size: 12px;
+    }
+    .dress-code_note {
+        font-size: 10px;
+    }
+    .gifts_title {
+        font-size: 17px;
+    }
+    .gifts_best-gift-first-line {
+        font-size: 12px;
+    }
+    .gifts_best-gift-second-line {
+        font-size: 12px;
+    }
+    .gifts_however-first-line {
+        font-size: 12px;
+    }
+    .gifts_however-second-line {
+        font-size: 12px;
+    }
+    .gifts_however-third-line {
+        font-size: 12px;
+    }
+    .gifts_wishlist {
+        font-size: 12px;
+    }
+    .gifts_ending {
+        font-size: 12px;
+    }
+    .flowers_title {
+        font-size: 17px;
+    }
+    .flowers_question {
+        font-size: 12px;
+    }
+    .flowers_then {
+        font-size: 12px;
+    }
+    .flowers_QR-code {
+        font-size: 12px;
+    }
+    .flowers_subscription {
+        font-size: 12px;
+    }
+    /* Блок 5: Опросник */
+    .rsvp_block {
+        margin: 20px 50px 20px;
+        padding: 15px 18px;
+    }
+    .rsvp_title {
+        font-size: 20px;
+    }
+    .field_label {
+        font-size: 12px;
+    }
+    .text_input {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+    .textarea_input {
+        font-size: 11px;
+        padding: 6px 8px;
+        min-height: 100px;
+    }
+    .questions_row {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .question_label {
+        font-size: 12px;
+    }
+    .checkbox_group {
+        gap: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .checkbox_option {
+        font-size: 11px;
+    }
+    .checkbox_custom {
+        width: 35px;
+        height: 35px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 14px;
+    }
+    .submit_btn {
+        font-size: 13px;
+        padding: 7px;
+    }
+    .rsvp_note {
+        font-size: 10px;
+    }
+    /* Блок 6: Доня */
+    .donya_welcome {
+        font-size: 28px;
+    }
+    .donya_info {
+        font-size: 12px;
+    }
+}
+
+/* ============================================ */
+/* АДАПТАЦИЯ 768px                              */
+/* ============================================ */
+@media (max-width: 768px) {
+    /* Блок 1: Шапка */
+    .head_title {
+        font-size: 30px;
+    }
+    .head_subtitle {
+        font-size: 11px;
+    }
+    /* Блок 2: ЗАГС */
+    .CRO_block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .CRO_title {
+        font-size: 18px;
+    }
+    .CRO_time {
+        font-size: 13px;
+    }
+    .CRO_place {
+        font-size: 13px;
+    }
+    .CRO_address {
+        font-size: 13px;
+    }
+    /* Блок 3: Ресторан */
+    .banquet_block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .banquet_title {
+        font-size: 18px;
+    }
+    .banquet_time {
+        font-size: 13px;
+    }
+    .banquet_place {
+        font-size: 13px;
+    }
+    .banquet_address {
+        font-size: 13px;
+    }
+    /* Блок 4: Детали */
+    .details_text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .details-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .details_title {
+        font-size: 18px;
+    }
+    .dress-code_title {
+        font-size: 16px;
+    }
+    .dress-code_suggestion-first-line {
+        font-size: 11px;
+    }
+    .dress-code_suggestion-second-line {
+        font-size: 11px;
+    }
+    .dress-code_note {
+        font-size: 9px;
+    }
+    .gifts_title {
+        font-size: 16px;
+    }
+    .gifts_best-gift-first-line {
+        font-size: 11px;
+    }
+    .gifts_best-gift-second-line {
+        font-size: 11px;
+    }
+    .gifts_however-first-line {
+        font-size: 11px;
+    }
+    .gifts_however-second-line {
+        font-size: 11px;
+    }
+    .gifts_however-third-line {
+        font-size: 11px;
+    }
+    .gifts_wishlist {
+        font-size: 11px;
+    }
+    .gifts_ending {
+        font-size: 11px;
+    }
+    .flowers_title {
+        font-size: 16px;
+    }
+    .flowers_question {
+        font-size: 11px;
+    }
+    .flowers_then {
+        font-size: 11px;
+    }
+    .flowers_QR-code {
+        font-size: 11px;
+    }
+    .flowers_subscription {
+        font-size: 11px;
+    }
+    /* Блок 5: Опросник */
+    .rsvp_block {
+        margin: 20px 40px 20px;
+        padding: 12px 15px;
+    }
+    .rsvp_title {
+        font-size: 18px;
+    }
+    .field_label {
+        font-size: 11px;
+    }
+    .text_input {
+        font-size: 10px;
+        padding: 5px 7px;
+    }
+    .textarea_input {
+        font-size: 10px;
+        padding: 5px 7px;
+        min-height: 100px;
+    }
+    .questions_row {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .question_label {
+        font-size: 11px;
+    }
+    .checkbox_group {
+        gap: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .checkbox_option {
+        font-size: 10px;
+    }
+    .checkbox_custom {
+        width: 32px;
+        height: 32px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 13px;
+    }
+    .submit_btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .rsvp_note {
+        font-size: 9px;
+    }
+    /* Блок 6: Доня */
+    .donya_block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .donya_welcome {
+        font-size: 26px;
+    }
+    .donya_info {
+        font-size: 11px;
+    }
+}
+/* ============================================ */
+/* АДАПТАЦИЯ 736px                              */
+/* ============================================ */
+@media (max-width: 736px) {
+    /* Блок 1: Шапка */
+    .head_title {
+        font-size: 28px;
+    }
+    .head_subtitle {
+        font-size: 10px;
+    }
+    /* Блок 2: ЗАГС */
+    .CRO_block {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .CRO_title {
+        font-size: 17px;
+    }
+    .CRO_time {
+        font-size: 12px;
+    }
+    .CRO_place {
+        font-size: 12px;
+    }
+    .CRO_address {
+        font-size: 12px;
+    }
+    /* Блок 3: Ресторан */
+    .banquet_block {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .banquet_title {
+        font-size: 17px;
+    }
+    .banquet_time {
+        font-size: 12px;
+    }
+    .banquet_place {
+        font-size: 12px;
+    }
+    .banquet_address {
+        font-size: 12px;
+    }
+    /* Блок 4: Детали */
+    .details_text {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .details-wrapper {
+        padding-left: 8px;
+        padding-right: 8px;
+        gap: 12px;
+    }
+    .details_title {
+        font-size: 17px;
+    }
+    .dress-code_title {
+        font-size: 15px;
+    }
+    .dress-code_suggestion-first-line {
+        font-size: 10px;
+    }
+    .dress-code_suggestion-second-line {
+        font-size: 10px;
+    }
+    .dress-code_note {
+        font-size: 8px;
+    }
+    .gifts_title {
+        font-size: 15px;
+    }
+    .gifts_best-gift-first-line {
+        font-size: 10px;
+    }
+    .gifts_best-gift-second-line {
+        font-size: 10px;
+    }
+    .gifts_however-first-line {
+        font-size: 10px;
+    }
+    .gifts_however-second-line {
+        font-size: 10px;
+    }
+    .gifts_however-third-line {
+        font-size: 10px;
+    }
+    .gifts_wishlist {
+        font-size: 10px;
+    }
+    .gifts_ending {
+        font-size: 10px;
+    }
+    .flowers_title {
+        font-size: 15px;
+    }
+    .flowers_question {
+        font-size: 10px;
+    }
+    .flowers_then {
+        font-size: 10px;
+    }
+    .flowers_QR-code {
+        font-size: 10px;
+    }
+    .flowers_subscription {
+        font-size: 10px;
+    }
+    /* Блок 5: Опросник */
+    .rsvp_block {
+        margin: 15px 30px 15px;
+        padding: 10px 12px;
+    }
+    .rsvp_title {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    .field_label {
+        font-size: 10px;
+    }
+    .text_input {
+        font-size: 9px;
+        padding: 4px 6px;
+    }
+    .textarea_input {
+        font-size: 9px;
+        padding: 4px 6px;
+        min-height: 90px;
+    }
+    .questions_row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .question_label {
+        font-size: 10px;
+    }
+    .checkbox_group {
+        gap: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .checkbox_option {
+        font-size: 9px;
+    }
+    .checkbox_custom {
+        width: 30px;
+        height: 30px;
+    }
+    .styled_checkbox:checked ~ .checkbox_custom::after {
+        font-size: 12px;
+    }
+    .submit_btn {
+        font-size: 11px;
+        padding: 5px;
+    }
+    .rsvp_note {
+        font-size: 8px;
+    }
+    /* Блок 6: Доня */
+    .donya_block {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .donya_welcome {
+        font-size: 24px;
+    }
+    .donya_info {
+        font-size: 10px;
+    }
+}
