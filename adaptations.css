@@ -1385,7 +1385,7 @@
     .CRO_block {
         padding-left: 15px;
         padding-right: 15px;
-        gap: clamp(12px, 8%, 15px);
+        gap: clamp(15px, 8%, 15px);
     }
     .CRO_title {
         font-size: 20px;
@@ -1401,11 +1401,17 @@
     .CRO_address {
         font-size: 15px;
     }
+    .CRO_image img {
+        max-width: 461.583px;
+    }
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 15px;
-        padding-right: 15px;
-        gap: clamp(12px, 8%, 15px);
+        padding-right: 50px;
+        gap: clamp(15px, 8%, 15px);
+    }
+    .banquet_image img {
+        max-width: 461.583px:
     }
     .banquet_title {
         font-size: 20px;
@@ -1450,25 +1456,42 @@
         font-size: 18px;
     }
     .gifts_best-gift-first-line {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 3px;
     }
     .gifts_best-gift-second-line {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
     .gifts_however-first-line {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 3px;
     }
     .gifts_however-second-line {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 3px;
     }
     .gifts_however-third-line {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
     .gifts_wishlist {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .arrow_to-right {
+        font-size: 14px;
+        margin: 0 3px;
+    }
+    .arrow_to-left {
+        font-size: 14px;
+        margin: 0 3px;
     }
     .gifts_ending {
-        font-size: 13px;
+        font-size: 12px;
+    }
+    .flower_QR_image img {
+        max-width: 79.5%;
     }
     .flowers_title {
         font-size: 18px;
@@ -1576,10 +1599,16 @@
     .CRO_address {
         font-size: 14px;
     }
+    .CRO_image img {
+        max-width: 461.583px;
+    }
     /* Блок 3: Ресторан */
     .banquet_block {
         padding-left: 12px;
         padding-right: 12px;
+    }
+    .banquet_image img {
+        max-width: 461.583px;
     }
     .banquet_title {
         font-size: 19px;
@@ -1622,18 +1651,23 @@
     }
     .gifts_best-gift-first-line {
         font-size: 12px;
+        margin-bottom: 3px;
     }
     .gifts_best-gift-second-line {
         font-size: 12px;
+        margin-bottom: 10px;
     }
     .gifts_however-first-line {
         font-size: 12px;
+        margin-bottom: 3px;
     }
     .gifts_however-second-line {
         font-size: 12px;
+        margin-bottom: 3px;
     }
     .gifts_however-third-line {
         font-size: 12px;
+        margin-bottom: 10px;
     }
     .gifts_wishlist {
         font-size: 12px;
