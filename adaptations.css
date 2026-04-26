@@ -1215,7 +1215,7 @@
         font-size: 16px;
     }
     .CRO_image img {
-        max-width: 562,6px;
+        max-width: 562.6px;
     }
     /* Блок 3: Ресторан */
     .banquet_block {
@@ -1224,7 +1224,7 @@
         gap: clamp(15px, 10%, 15px);
     }
     .banquet_image img {
-        max-width: 562,6px;
+        max-width: 562.6px;
     }
     .banquet_title {
         font-size: 22px;
