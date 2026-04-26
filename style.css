@@ -31,6 +31,14 @@ img {
     height: auto;
     display: block;
 }
+/* Анимации появления при скролле */
+.fade-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.fade-on-scroll.visible {
+    opacity: 1;
+}
 /* ============================================ */
 /* Блок 1: Шапка                                */
 /* ============================================ */
