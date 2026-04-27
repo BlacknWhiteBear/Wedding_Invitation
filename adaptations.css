@@ -1451,6 +1451,7 @@
     }
     .dress-code_note {
         font-size: 11px;
+        margin-top: 18px;
     }
     .gifts_title {
         font-size: 18px;
@@ -1612,7 +1613,7 @@
         font-size: 15px;
     }
     .CRO_image img {
-        max-width: 461.583px;
+        max-width: 438.35px;
     }
     /* Блок 3: Ресторан */
     .banquet_block {
@@ -1621,7 +1622,7 @@
         gap: clamp(15px, 8%, 15px);
     }
     .banquet_image img {
-        max-width: 461.583px;
+        max-width: 438.35px;
     }
     .banquet_title {
         font-size: 20px;
@@ -1704,7 +1705,7 @@
         margin-top: 50px;
     }
     .flower_QR_image img {
-        max-width: 79%;
+        max-width: 74%;
     }
     .flowers_title {
         font-size: 18px;
@@ -1822,7 +1823,7 @@
         font-size: 15px;
     }
     .CRO_image img {
-        max-width: 461.583px;
+        max-width: 438.35px;
     }
     /* Блок 3: Ресторан */
     .banquet_block {
@@ -1831,7 +1832,7 @@
         gap: clamp(15px, 8%, 15px);
     }
     .banquet_image img {
-        max-width: 461.583px;
+        max-width: 438.35px;
     }
     .banquet_title {
         font-size: 20px;
@@ -1914,7 +1915,7 @@
         margin-top: 50px;
     }
     .flower_QR_image img {
-        max-width: 79%;
+        max-width: 74%;
     }
     .flowers_title {
         font-size: 18px;
