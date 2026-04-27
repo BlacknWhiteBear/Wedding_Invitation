@@ -1823,7 +1823,7 @@
         font-size: 15px;
     }
     .CRO_image img {
-        max-width: 438.35px;
+        max-width: 419.767px;
     }
     /* Блок 3: Ресторан */
     .banquet_block {
@@ -1832,7 +1832,7 @@
         gap: clamp(15px, 8%, 15px);
     }
     .banquet_image img {
-        max-width: 438.35px;
+        max-width: 419.767px;
     }
     .banquet_title {
         font-size: 20px;
@@ -1877,27 +1877,27 @@
         font-size: 18px;
     }
     .gifts_best-gift-first-line {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .gifts_best-gift-second-line {
-        font-size: 11px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom: 8px;
     }
     .gifts_however-first-line {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .gifts_however-second-line {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .gifts_however-third-line {
-        font-size: 11px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom: 8px;
     }
     .gifts_wishlist {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .arrow_to-right {
@@ -1909,13 +1909,13 @@
         margin: 0 3px;
     }
     .gifts_ending {
-        font-size: 11px;
+        font-size: 10px;
     }
     .flower_QR_image {
         margin-top: 50px;
     }
     .flower_QR_image img {
-        max-width: 74%;
+        max-width: 75.4%;
     }
     .flowers_title {
         font-size: 18px;
@@ -1924,10 +1924,10 @@
         font-size: 11px;
     }
     .flowers_then {
-        font-size: 10px;
+        font-size: 9px;
     }
     .flowers_QR-code {
-        font-size: 12px;
+        font-size: 11px;
     }
     .flowers_subscription {
         font-size: 12px;
@@ -1960,8 +1960,8 @@
         min-height: 110px;
     }
     .questions_row {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .question_label {
         font-size: 11px;
@@ -2033,7 +2033,7 @@
         font-size: 15px;
     }
     .CRO_image img {
-        max-width: 461.583px;
+        max-width: 419.767px;
     }
     /* Блок 3: Ресторан */
     .banquet_block {
@@ -2042,7 +2042,7 @@
         gap: clamp(15px, 8%, 15px);
     }
     .banquet_image img {
-        max-width: 461.583px;
+        max-width: 419.767px;
     }
     .banquet_title {
         font-size: 20px;
@@ -2087,27 +2087,27 @@
         font-size: 18px;
     }
     .gifts_best-gift-first-line {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .gifts_best-gift-second-line {
-        font-size: 11px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom: 8px;
     }
     .gifts_however-first-line {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .gifts_however-second-line {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .gifts_however-third-line {
-        font-size: 11px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-bottom: 8px;
     }
     .gifts_wishlist {
-        font-size: 11px;
+        font-size: 10px;
         margin-bottom: 3px;
     }
     .arrow_to-right {
@@ -2119,13 +2119,13 @@
         margin: 0 3px;
     }
     .gifts_ending {
-        font-size: 11px;
+        font-size: 10px;
     }
     .flower_QR_image {
         margin-top: 50px;
     }
     .flower_QR_image img {
-        max-width: 79%;
+        max-width: 75.4%;
     }
     .flowers_title {
         font-size: 18px;
@@ -2134,10 +2134,10 @@
         font-size: 11px;
     }
     .flowers_then {
-        font-size: 10px;
+        font-size: 9px;
     }
     .flowers_QR-code {
-        font-size: 12px;
+        font-size: 11px;
     }
     .flowers_subscription {
         font-size: 12px;
@@ -2170,8 +2170,8 @@
         min-height: 110px;
     }
     .questions_row {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .question_label {
         font-size: 11px;
