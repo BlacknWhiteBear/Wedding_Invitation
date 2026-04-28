@@ -2033,7 +2033,7 @@
         font-size: 15px;
     }
     .CRO_image img {
-        max-width: 419.767px;
+        max-width: 401.2px;
     }
     /* Блок 3: Ресторан */
     .banquet_block {
@@ -2042,7 +2042,7 @@
         gap: clamp(15px, 8%, 15px);
     }
     .banquet_image img {
-        max-width: 419.767px;
+        max-width: 401.2px;
     }
     .banquet_title {
         font-size: 20px;
@@ -2122,7 +2122,7 @@
         font-size: 10px;
     }
     .flower_QR_image {
-        margin-top: 50px;
+        margin-top: 40px;
     }
     .flower_QR_image img {
         max-width: 75.4%;
